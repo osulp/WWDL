@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000000.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Index Help Page 
+  *
+  * $Id$
+  -->
+
+<topic id="index/topic/000000" locale="en_US" title="Open Harvester Systems Help" toc="index/toc/000000" key="index.index">
+	<section>
+		<![CDATA[<p>The Help document for Open Harvester Systems is designed to assist users in the process of browsing and searching content in the PKP Harvester. It is also intended to serve as a manual for Open Harvester Systems that describes the scope and workings of this software.</p><p>This help system is context specific. To learn more about a specific part of the system, click the "Help" link on the particular page you wish to read about.</p>]]>
+	</section>
+</topic>

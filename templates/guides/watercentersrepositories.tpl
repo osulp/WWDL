@@ -1,0 +1,45 @@
+
+<h2>Water Centers and Repositories</h2>
+        
+<p>While the <a href="http://westernwaters.org/">Western Waters Digital Library</a> provides access to a variety of rich historical material, it also allows you to search for  current research papers and materials about contemporary water issues. These materials come from established water research centers and the insitutional repositories of WWDL partners.</p> 
+
+
+<h3>Searching the WWDL for recent research materials</h3>
+<p>Use the <a href="/misearch">Western Waters Advanced search page</a> if you want to refine your searches. You may wish to limit your search to &quot;text&quot; if you are interested in finding research papers. Many of the digital collections in the Western Waters Digital Library use Library of Congress subject headings to describe their items, so using subject headings in the subject area of the advanced search page can allow you to find materials on very specific topics, such as:</p>
+<p><br />
+<a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-3=groundwater flow&searchPage=1">groundwater flow</a><br />
+<a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-2=water%20resources%20management&searchPage=1">water resources management</a><br />
+<a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-2=fresh%20water%20studies&searchPage=1">fresh water studies<br />
+</a><a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-2=environmental%20indicators%20and%20impact%20assessment&searchPage=1">environmental indicators and impact assessment<br />
+</a><a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-2=environmental%20chemistry&searchPage=1">environmental chemistry</a></p>
+<p>Searching the description field will allow you to search the abstracts for reports and technical papers.</p>
+
+<p><img src="/img/techreport.png" width="521" height="310" alt="searching for technical reports" /></p>
+
+<p>The benefit of searching the Western Waters Digital Library for current reports and research materials is the ability to search many relevent digitial library collections at once, for example:  </p>
+<h4><a href="browse/index/10">Center for Research in Water Resources</a></h4>
+<p >From the University of Texas, Austin. This collection contains CRWR reports, the Environmental Flows Information System, and information on the Trinity River Water Basin.</p>
+<h4><a href="/misearch/results?query=rain+making&crosswalk-5=">Cloud Seeding Documents</a></h4>
+<p class="contentnew">A collection of publications about the effects of cloud seeding,   weather modifications, and related information regarding the Columbia   River Basin. From the University of Washington.</p>
+<h4><a href="/browse/index/33">Digital Commons @ University of Nebraska-Lincoln</a></h4>
+<p>The Water Center operates within the University of Nebraska's Institute   of Agriculture and Natural Resources (IANR) at the University of   Nebraska-Lincoln's (UNL) research and agricultural campus. Its mission   is to implement and facilitate water and water-related research,   teaching, extension and public outreach programming within the   University of Nebraska system. </p>
+<h4><a href="/misearch/results?query=&archiveIds[]=all&isAdvanced=1&crosswalk-3=Oregon%20Water%20Conference&searchPage=1">Oregon Water Conference 2011</a></h4>
+<p class="contentnew">This collection contains the abstracts and presentation files from <a href="http://www.towc2011.org/">The Oregon Water Conference 2011: Evaluating and Managing Water Resources in a Climate of Uncertainty</a> hosted at Oregon State University, May 24-25, 2011. <strong>The Oregon Water Conference</strong> (TOWC) explored the region&rsquo;s water future and addressed the following issues and themes. Oregon   and the rest of the Pacific Northwest face an uncertain water future.   Not only will the climate itself be uncertain, but also the political,   social, legal, economic and regulatory climates.
+What   will climate change produce in the way of hydroecological changes? How   much will population change, perhaps fueled by climate refugees, stress   our water resources? What will the regulatory climate embody? Will a   revised Columbia River Treaty with Canada encompass more than power   generation and flood control? Do we need a Columbia Basin Compact to   cope with future shortages? Will the area see more in the way of   regional water management agencies, perhaps straddling state lines? Can   the prior appropriation doctrine adapt to the future? Will exempt wells   remain &lsquo;exempt&rsquo;? Do we know how much water will be available? From Oregon State University.</p>
+<h4><a href="/browse/index/5">ResearchWorks at the University of Washington</a></h4>
+<p>Resources from The Water Center at the Univesity of Washington. </p>
+<h4><a href="/browse/index/28">ScholarsArchive@ Oregon State University</a></h4>
+<p>ScholarsArchive@OSU is Oregon State University's digital service for   gathering, indexing, making available and storing the scholarly work of   the Oregon State University community. It also includes materials from outside the institution in support   of the university's land, sun, sea and space grant missions and other   research interests.</p>
+
+<h4><a href="/browse/index/22" target="_blank">The Texas Water Resources Institute</a></h4>
+<p class="contentnew"> The Texas Water Resources Institute, a unit of the Texas Agricultural   Experiment Station and Texas Cooperative Extension, and member of the   National Institutes for Water Resources, provides leadership to   stimulate priority research and Extension educational programs in water   resources within the Texas A&amp;M University System and throughout   Texas. </p>
+<h4><a href="/browse/index/26" target="_blank">UNLV Digital Commons Water Resources</a></h4>
+<p class="contentnew">One of the objectives of the digital project was to provide a   digital  repository for published technical and scientific reports   related to geology,  water supply, and water quality in the Las Vegas   Valley. Although the  collection of reports is not comprehensive, it   does make available online as  many of the most critical studies related   to water in Southern Nevada. We hope  to continue adding to this   digital repository, which is maintained in the <a href="http://digitalcommons.library.unlv.edu/">Library’s Digital Commons</a>. </p>
+<p>These publications include ground-water resource and supply   bulletins and  papers published by the USGS, the U.S. Bureau of   Reclamation, The Nevada State  Engineer and the Nevada Department of   Conservation and Natural Resources;  reports sponsored by the Southern   Nevada Water Authority and the Clark County  Sanitation District; and   scientific studies conducted and published by the UNLV  Lake Mead   Limnological Research Center and the University of Nevada Desert    Research Institute. There are also socioeconomic and biological impact   studies  conducted for the Bureau of Reclamation on the Southern Nevada   Water Project. From the University of Nevada, Las Vegas.</p>
+<h4><a href="/browse/index/21">W. M. Keck Laboratory of Hydraulics and Water Resources</a></a></h4>
+<p class="contentnew">Caltech Library System manages CaltechKHR, a repository of   technical reports, on behalf of the W. M. Keck Laboratory of Hydraulics   and Water Resources at Caltech.</p>
+<h4><a href="http://ir.library.oregonstate.edu/xmlui/handle/1957/31">Water and Watersheds Initiative (1960-2005)</a></h4>
+<p class="contentnew">This collection includes the seminar series publications, published   research reports, special reports and Tualatin River Basin reports published by the Center for Water and Environmental Sustainability   (CWESt) which operated from 2000-2005 and the Oregon Water Resources   Research Institute (OWRRI) which operated from 1960-2000. From  Oregon State University.  </p>
+<h4><a href="/browse/index/6">Water Resources Research Center &amp; Environmental Center</a></h4>
+<p class="contentnew">Hawaii's culture and climate present unique issues and problems of   water   resource management. Rainfall events in the islands are often   intense   and short compared to most temperate climates. Hawaiian   hydrogeology   differs markedly from most other areas. We are almost   entirely dependent   on groundwater for our drinking water. The islands   are closed systems,   importing water is not feasible if we overuse or   contaminate our   aquifers. Our tropical climate permits the usual   pollution indicator   organisms to grow in the soil, compromising their   usefulness for   detecting pollution. Our tourism-based economy is   dependent upon   vigilant stewardship of our nearshore water quality. As   a key element of   traditional Hawaiian life, water, both fresh and   ocean, plays a unique   and important cultural role. At WRRC we   concentrate on addressing the   unique water and wastewater management   problems and issues that we in   the Pacific face. From the University of Hawaii at Manoa.</p>
+

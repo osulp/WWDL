@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  * schemaMap.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Maps schema aliases to schemas.
+  *
+  * $Id$
+  -->
+
+<!DOCTYPE schemaMap [
+	<!ELEMENT schemaMap (schema+)>
+	<!ELEMENT schema (alias+)>
+		<!ATTLIST schema
+			plugin CDATA #IMPLIED>
+	<!ELEMENT alias (#PCDATA)>
+		<!ATTLIST alias
+			harvester CDATA #IMPLIED>
+]>
+
+<schemaMap>
+	<schema plugin="DublinCorePlugin">
+		<alias>oai_dc</alias>
+	</schema>
+	<schema plugin="MarcPlugin">
+		<alias>oai_marc</alias>
+		<alias>marcxml</alias>
+	</schema>
+	<schema plugin="Rfc1807Plugin">
+		<alias>oai_rfc1807</alias>
+	</schema>
+	<schema plugin="ModsPlugin">
+		<alias>oai_mods</alias>
+		<alias>mods</alias>
+	</schema>
+	<schema plugin="EtdmsPlugin">
+		<alias>oai_etdms</alias>
+	</schema>
+</schemaMap>

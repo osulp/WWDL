@@ -1,0 +1,3 @@
+
+#copy files from old wwdl from grep match
+egrep '/images/[^)]+' styles/main.css -o | uniq | xargs printf "../wwdl_old/public%s\n" | xargs cp -t images

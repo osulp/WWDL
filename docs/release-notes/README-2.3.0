@@ -1,0 +1,52 @@
+Harvester2 2.3.0 Release Notes
+CVS tag: harvester-2_3_0-0
+Release date: Feb 18, 2009
+=================================
+
+Configuration Changes
+---------------------
+
+See config.TEMPLATE.inc.php for a description and examples of all supported
+configuration parameters.
+
+New config.inc.php parameters:
+	- general.restful_urls: Whether or not the Harvester should use RESTful
+	    URLs (i.e. omitting the index.php part of the script with the aid of
+	    Apache mod_rewrite, as documented in README)
+	- general.throttling_delay: Support throttling to limit data source load
+	- i18n.charset_normalization: Enable or disable detection and correction
+	    of UTF8 errors and invalid sequences
+	- email.require_validation: Enable or disable validation of email
+	    addresses for self-registered accounts
+	- oai.oai: Enable or disable OAI data provider support
+	- oai.repository_id: OAI Repository ID for OAI data provider support
+	- captcha.captcha_on_register: Enable CAPTCHA testing for user
+	    registrations
+
+
+New Features
+------------
+Harvester 2.3 represents a major rewrite of large portions of the software from
+prior releases, including rewritten storage and indexing code, support for more
+user accounts and user self-registration, plugin-based indexing including SOLR/
+Lucene support (in addition to the traditional MySQL-based inverted index), and
+much more.
+
+NOTE: Upgrading from prior releases will retain settings and the archive list,
+but harvested metadata WILL NOT be migrated to the new version and old entries
+will be DELETED. After upgrading, all data sources must be re-indexed.
+
+
+Bug Fixes
+---------
+	- #2566# OAI-specific code remains in generic harvester
+	- #2632# ArchiveDAO::deleteArchive doesn't clean up archive_settings
+	- #2801# Some versions of PHP complain about reference use
+	- #2803# Typo in crosswalk form code
+	- #2888# DC summary should display DC date, not OAI record timestamp
+	- #2908# RT export not working
+	- #3012# Host: header not properly provided for proxies
+	- #3194# Browse interface doesn't respect "enabled" setting for archives
+	- #3734# Date in MODS summary view shows oai:datestamp
+	- #3980# Browse function oddities when no archives are present
+	- #3994# Improve error checking in harvests 

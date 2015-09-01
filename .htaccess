@@ -1,0 +1,15 @@
+RewriteEngine on
+ErrorDocument 410 /410.php
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RedirectMatch gone /index.php/browse/bySet/[0-9]+
+RedirectMatch gone /index.php/browse/guide/columbiariverbasin
+RedirectMatch gone /index.php/browse/guide/columbia
+RedirectMatch gone /index.php/browse/index/all
+RedirectMatch gone /index.php/instruction/waterProjects/
+
+# otherwise forward it to index.php
+RewriteRule ^(.*)$ index.php/$1 [L]

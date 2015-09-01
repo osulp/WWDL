@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "../../lib/pkp/dtd/install.dtd">
+
+<!--
+  * upgrade.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Upgrade descriptor file.
+  *
+  -->
+
+<install version="2.3.2.0">
+	<upgrade minversion="2.0.0.0" maxversion="2.0.0.0">
+		<!-- 2.0.0.0 to 2.0.1.0 -->
+		<data file="dbscripts/xml/upgrade/2.0.1_update.xml" />
+		<note file="dbscripts/xml/release-notes/README-2.0.1" />
+	</upgrade>
+	<upgrade minversion="2.0.0.0" maxversion="2.0.1.0">
+		<!-- 2.0.1.0 to 2.3 -->
+		<code function="clearDataCache" />
+
+		<!-- Stage 1: Add selected new tables without dropping
+		     deprecated columns containing information to migrate -->
+		<schema file="dbscripts/xml/harvester2_schema_stage1.xml" />
+		<data file="dbscripts/xml/upgrade/2.3_preupdate.xml" />
+	</upgrade>
+
+	<upgrade minversion="2.0.0.0" maxversion="2.3.0.9">
+		<!-- Drop all indexes. Necessary e.g. for the versions table,
+		     which needs to be indexed on the "product" column for 2.3.1+. -->
+		<code function="dropAllIndexes" />
+	</upgrade>
+
+	<upgrade minversion="2.3.0.0" maxversion="2.3.0.9">
+		<!-- 2.3.0 to 2.3.1 -->
+		<data file="dbscripts/xml/upgrade/2.3.1_preupdate.xml" />
+	</upgrade>
+
+	<!-- PKP schema components -->
+	<schema file="lib/pkp/xml/schema/common.xml" />
+	<schema file="lib/pkp/xml/schema/controlledVocab.xml" />
+
+	<!-- Harvester schema -->
+	<schema file="dbscripts/xml/harvester2_schema.xml" />
+
+	<!-- Other upgrade tasks -->
+	<upgrade minversion="2.0.0.0" maxversion="2.2.9.0">
+		<data file="dbscripts/xml/upgrade/2.3_update.xml" />
+		<code function="updateArchivePluginNames" />
+		<code function="installSchemaAliases" />
+		<note file="docs/release-notes/README-2.3.0" />
+	</upgrade>
+
+	<upgrade minversion="2.0.0.0" maxversion="2.3.1.0">
+		<data file="dbscripts/xml/upgrade/2.3.1_update.xml" />
+		<code function="clearDataCache" />
+		<note file="docs/release-notes/README-2.3.1" />
+	</upgrade>
+
+	<upgrade minversion="2.0.0.0" maxversion="2.3.1.9">
+		<data file="dbscripts/xml/upgrade/2.3.2_update.xml" />
+	</upgrade>
+
+	<!-- update plugin configuration - should be done as the final upgrade task -->
+	<code function="addPluginVersions" />
+</install>

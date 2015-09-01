@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../../lib/pkp/dtd/helpTopic.dtd">
+
+<!--
+  * 000009.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Crosswalk Form Help Page 
+  *
+  * $Id$
+  -->
+
+<topic id="admin/topic/000009" locale="en_US" title="Crosswalk Administration" toc="admin/toc/000000" key="admin.crosswalkForm">
+	<section>
+		<![CDATA[<p>When creating a new crosswalk or editing an existing crosswalk, the Administrator will be given the opportunity to select the fields it links in the various metadata formats. (For a general description of crosswalks, see {help_topic key="admin.crosswalks" text="Crosswalks"}.)</p>
+		<p>A single crosswalk may link several fields in several metadata formats. For example, in the MARC schema, author information is potentially spread amongst many fields; these can be grouped into a single crosswalk.</p>
+		<p>It is not necessary for every crosswalk to support all schemas; if a crosswalk only supports a few schemas, it will only be displayed when it is relevant (based on the selected archives on the Search page).</p>
+		<p>Crosswalks may be of two types: date crosswalks or text crosswalks. Note that some fields are "mixed-type", and may contain both text and date information; if so, that field will be selectable for both date crosswalks and text crosswalks.</p>
+		<p>The Schema Filter does not affect the crosswalk being modified; it merely restricts the list of fields to the selected schema. When changing the list of fields supported by a crosswalk, the administrator must save the changes with the "Save" button" before selecting another schema using the Schema Filter.</p>
+		<p>In addition to defining the search form when multiple schema are chosen, Crosswalks can be used to support record sorting for Browsing. To add this crosswalk to the list of sorting options, use the checkbox labelled "Allow users to sort records using this crosswalk when browsing records". This feature is not recommended for crosswalks that do not support all schema, or crosswalks that make use of multiple fields in a single schema.</p>
+		<p>Crosswalks maybe added, deleted, and modified without requiring a re-indexing of content.</p>]]>
+	</section>
+</topic>

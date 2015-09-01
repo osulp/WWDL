@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../lib/pkp/dtd/version.dtd">
+<!--
+  * version.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Open Harvester Systems version information.
+  -->
+
+<version>
+	<application>harvester2</application>
+	<type>core</type>
+	<release>2.3.2.0</release>
+	<tag>harvester-2_3_2-0</tag>
+	<date>2012-03-16</date>
+	<info>http://pkp.sfu.ca/harvester/</info>
+	<package>http://pkp.sfu.ca/harvester2/download/harvester-2.3.2.tar.gz</package>
+	<patch from="2.0.0.0">http://pkp.sfu.ca/harvester2/download/patch/harvester-2.0_to_2.3.2.patch.gz</patch>
+	<patch from="2.0.1.0">http://pkp.sfu.ca/harvester2/download/patch/harvester-2.0.1_to_2.3.2.patch.gz</patch>
+	<patch from="2.3.0.0">http://pkp.sfu.ca/harvester2/download/patch/harvester-2.3.0_to_2.3.2.patch.gz</patch>
+	<patch from="2.3.1.0">http://pkp.sfu.ca/harvester2/download/patch/harvester-2.3.1_to_2.3.2.patch.gz</patch>
+</version>

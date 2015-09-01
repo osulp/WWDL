@@ -1,0 +1,7 @@
+/cache/*.php
+/cache/t_compile/*.php
+/cache/HTML
+/cache/*/
+robots.txt
+*.gz
+*.swp

@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<!-- Common Messages -->
+	<message key="common.changesSaved">Your changes have been saved.</message>
+	<message key="common.language">Language</message>
+	<message key="common.languages">Languages</message>
+	<message key="common.notApplicable">Not Applicable</message>
+	<message key="common.country">Country</message>
+	<message key="common.harvester2">Open Harvester Systems</message>
+	<message key="common.enabled">Enabled</message>
+	<message key="common.disabled">Disabled</message>
+	<message key="common.search">Search</message>
+	<message key="common.refresh">Refresh</message>
+	<message key="common.saveAndContinue">Save and continue</message>
+	<message key="common.close">Close</message>
+	<message key="common.delete">Delete</message>
+	<message key="common.yes">Yes</message>
+	<message key="common.no">No</message>
+	<message key="common.on">On</message>
+	<message key="common.add">Add</message>
+	<message key="common.off">Off</message>
+	<message key="common.upload">Upload</message>
+	<message key="common.fileName">Filename</message>
+	<message key="common.edit">Edit</message>
+	<message key="common.select">Select</message>
+	<message key="common.manage">Manage</message>
+	<message key="common.error.databaseError">A database error has occurred: {$error}</message>
+	<message key="common.mailingAddress">Mailing Address</message>
+	<message key="common.save">Save</message>
+	<message key="common.cancel">Cancel</message>
+	<message key="common.requiredField">* Denotes required field</message>
+	<message key="common.action">Action</message>
+	<message key="common.from">From</message>
+	<message key="common.until">Until</message>
+	<message key="common.none">None</message>
+	<message key="common.default">Default</message>
+	<message key="common.enable">Enable</message>
+	<message key="common.disable">Disable</message>
+	<message key="common.captchaField">Validation</message>
+	<message key="common.captchaField.description">Please enter the letters as they appear in the image above.</message>
+	<message key="common.captchaField.badCaptcha">The characters you entered did not match the characters in the image. Please check the characters and try again.</message>
+
+	<!-- Navigation Messages -->
+	<message key="navigation.home">Home</message>
+	<message key="navigation.help">Help</message>
+	<message key="navigation.about">About</message>
+	<message key="navigation.user">User</message>
+	<message key="navigation.userHome">User Home</message>
+	<message key="navigation.search">Search</message>
+	<message key="navigation.browse">Browse</message>
+	<message key="navigation.login">Log In</message>
+	<message key="navigation.register">Register</message>
+	<message key="navigation.content">Content</message>
+	<message key="navigation.loggedInAs">You are logged in as...</message>
+	<message key="navigation.logout">Log Out</message>
+	<message key="navigation.addArchive">Add Archive</message>
+
+	<message key="navigation.previousPage">&lt;&lt;</message>
+	<message key="navigation.nextPage">&gt;&gt;</message>
+	<message key="navigation.items">{$from} - {$to} of {$total} Items</message>
+	<message key="navigation.fontSize">Font Size</message>
+
+	<!-- Harvester messages -->
+	<message key="harvester.error.unknownMetadataField">An unknown metadata field {$name} was encountered.</message>
+	<!-- Installation Messages -->
+	<message key="installer.harvester2Installation">PKP Open Harvester Systems Installation</message>
+	<message key="installer.harvester2Upgrade">Open Harvester Systems Upgrade</message>
+	<message key="installer.installationInstructions"><![CDATA[<h4>PKP Open Harvester Systems Version {$version}</h4>
+
+<p>Thank you for downloading the Public Knowledge Project's <strong>Open Harvester Systems</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> file included with this software. For more information about the Public Knowledge Project and its software projects, please visit the <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. If you have bug reports or technical support inquiries about Open Harvester Systems, see the <a href="http://pkp.sfu.ca/support/forum" target="_blank">support forum</a> or visit PKP's online <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+
+<h4>Recommended system requirements</h4>
+
+<ul>
+	<li><a href="http://www.php.net/" target="_blank">PHP</a> >= {$phpVersion} (including PHP 5.x); you are currently using PHP {$phpVersion}{$wrongPhpText}</li>
+	<li><a href="http://www.mysql.com/" target="_blank">MySQL</a> >= 3.23.23 (including MySQL 4.x and 5.x)</li>
+	<li><a href="http://httpd.apache.org/" target="_blank">Apache</a> >= 1.3.2x or >= 2.0.4x or Microsoft IIS 6</li>
+	<li>Operating system: Any OS that supports the above software, including <a href="http://www.linux.org/" target="_blank">Linux</a>, <a href="http://www.bsd.org/" target="_blank">BSD</a>, <a href="http://www.sun.com/" target="_blank">Solaris</a>, <a href="http://www.apple.com/" target="_blank">Mac OS X</a>, <a href="http://www.microsoft.com/">Windows</a></li>
+</ul>
+
+<p>As PKP does not have the resources to test every possible combination of software versions and platforms, no guarantee of correct operation or support is implied.</p>
+
+<p>Changes to these settings can be made after installation by editing the file <tt>config.inc.php</tt> in the base Open Harvester Systems directory, or using the site administration web interface.</p>
+
+<h4>Supported database systems</h4>
+
+<p>Open Harvester Systems has currently only been tested on MySQL although other database management systems supported by <a href="http://adodb.sourceforge.net/" target="_blank">ADOdb</a> may work (in full or partially). Compatibility reports and/or code patches for alternative DBMSs can be sent to the Open Harvester Systems team.</p>
+
+<h4>Pre-Installation Steps</h4>
+
+<p>1. The following files and directories (and their contents) must be made writable:</p>
+<ul>
+	<li><tt>config.inc.php</tt> is writable (optional): {$writable_config}</li>
+	<li><tt>cache/</tt> is writable: {$writable_cache}</li>
+	<li><tt>cache/t_cache/</tt> is writable: {$writable_templates_cache}</li>
+	<li><tt>cache/t_compile/</tt> is writable: {$writable_templates_compile}</li>
+	<li><tt>cache/_db</tt> is writable: {$writable_db_cache}</li>
+</ul>]]></message>
+	<message key="installer.installationWrongPhp"><![CDATA[<br/><strong>WARNING: Your current version of PHP does not meet the minimum requirements for installation. It is recommended to upgrade to a more recent release of PHP.</strong>]]></message>
+	<message key="installer.upgradeInstructions"><![CDATA[<h4>Open Harvester Systems Version {$version}</h4>
+	
+<p>Thank you for downloading the Public Knowledge Project's <strong>Open Harvester Systems</strong>. Before proceeding, please read the <a href="{$baseUrl}/docs/README">README</a> and <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> files included with this software. For more information about the Public Knowledge Project and its software projects, please visit the <a href="http://pkp.sfu.ca/" target="_blank">PKP web site</a>. If you have bug reports or technical support inquiries about Open Harvester Systems, see the <a href="http://pkp.sfu.ca/support/forum" target="_blank">support forum</a> or visit PKP's online <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">bug reporting system</a>. Although the support forum is the preferred method of contact, you can also email the team at <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>It is <strong>strongly recommended</strong> that you back up your database, files directory, and Open Harvester Systems installation directory before proceeding.</p>
+<p>If you are running in <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, please ensure that the max_execution_time directive in your php.ini configuration file is set to a high limit. If this or any other time limit (e.g. Apache's "Timeout" directive) is reached and the upgrade process is interrupted, manual intervention will be required.</p>]]></message>
+	<message key="installer.localeSettings">Locale Settings</message>
+	<message key="installer.localeSettingsInstructions"><![CDATA[For complete Unicode (UTF-8) support, select UTF-8 for all character set settings. Note that this support currently requires a MySQL >= 4.1.1 database server. Please also note that full Unicode support requires PHP >= 4.3.0 compiled with support for the <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> library (enabled by default in most recent PHP installations). You may experience problems using extended character sets if your server does not meet these requirements.
+<br /><br />
+Your server currently supports mbstring: <strong>{$supportsMBString}</strong>]]></message>
+	<message key="installer.localeInstructions">The primary language to use for this system. Please consult the Open Harvester Systems documentation if you are interested in support for languages not listed here.</message>
+	<message key="installer.additionalLocales">Additional locales</message>
+	<message key="installer.additionalLocalesInstructions">Select any additional languages to support in this system. Additional languages can also be installed at any time from the site administration interface.</message>
+	<message key="installer.clientCharset">Client character set</message>
+	<message key="installer.clientCharsetInstructions">The encoding to use for data sent to and received from browsers.</message>
+	<message key="installer.connectionCharset">Connection character set</message>
+	<message key="installer.connectionCharsetInstructions">The encoding to use for data sent to and received from the database. This should be the same as the client character set. Note that this capability is only supported with MySQL >= 4.1.1. Select "Not applicable" if your database server does not meet these requirements.</message>
+	<message key="installer.databaseCharset">Database character set</message>
+	<message key="installer.databaseCharsetInstructions">The encoding to use for data stored in the database. Note that this capability is only supported with MySQL >= 4.1.1. Select "Not applicable" if your database server does not meet these requirements.</message>
+	<message key="installer.locale">Locale</message>
+	<message key="installer.securitySettings">Security Settings</message>
+	<message key="installer.encryption">Password encryption algorithm</message>
+	<message key="installer.encryptionInstructions">SHA1 is recommended if your system supports it (requires PHP >= 4.3.0).</message>
+	<message key="installer.administratorAccount">Administrator Account</message>
+	<message key="installer.administratorAccountInstructions">This user account will become the site administrator and have complete access to the system. Additional user accounts can be created after installation.</message>
+	<message key="installer.databaseSettings">Database Settings</message>
+	<message key="installer.databaseSettingsInstructions">Open Harvester Systems requires access to a SQL database to store its data. See the system requirements above for a list of supported databases. In the fields below, provide the settings to be used to connect to the database.</message>
+	<message key="installer.databaseDriver">Database driver</message>
+	<message key="installer.databaseHost">Host</message>
+	<message key="installer.databaseUsername">Username</message>
+	<message key="installer.databasePassword">Password</message>
+	<message key="installer.databaseName">Database name</message>
+	<message key="installer.databaseDriverInstructions"><![CDATA[<strong>Database drivers listed in brackets do not appear to have the required PHP extension loaded and installation will likely fail if selected.</strong><br />Any unsupported database drivers listed above are listed solely for academic purposes and are unlikely to work.]]></message>
+	<message key="installer.databaseHostInstructions">Leave the hostname blank to connect using domain sockets instead of over TCP/IP. This is not necessary with MySQL, which will automatically use sockets if "localhost" is entered, but is required with some other database servers such as PostgreSQL.</message>
+	<message key="installer.createDatabase">Create new database</message>
+	<message key="installer.createDatabaseInstructions">To use this option your database system must support remote database creation and your user account must have the appropriate permissions to create new databases. If installation fails with this option selected, manually create the database on your server and run the installer again with this option disabled.</message>
+	<message key="installer.installApplication">Install Open Harvester Systems</message>
+	<message key="installer.upgradeApplication">Upgrade Open Harvester Systems</message>
+	<message key="installer.form.localeRequired">A locale must be selected.</message>
+	<message key="installer.form.clientCharsetRequired">A client character set must be selected.</message>
+	<message key="installer.form.filesDirRequired">The directory to be used for storing uploaded files is required.</message>
+	<message key="installer.form.encryptionRequired">The algorithm to use for encrypting user passwords must be selected.</message>
+	<message key="installer.form.databaseDriverRequired">A database driver must be selected.</message>
+	<message key="installer.form.databaseNameRequired">The database name is required.</message>
+	<message key="installer.form.usernameRequired">A username for the administrator account is required.</message>
+	<message key="installer.form.passwordRequired">A password for the administrator account is required.</message>
+	<message key="installer.form.usernameAlphaNumeric">The administrator username can contain only alphanumeric characters, underscores, and hyphens, and must begin and end with an alphanumeric character.</message>
+	<message key="installer.form.passwordsDoNotMatch">The administrator passwords do not match.</message>
+	<message key="installer.form.emailRequired">A valid email address for the administrator account is required.</message>
+	<message key="installer.form.separateMultiple">Separate multiple values with commas</message>
+	<message key="installer.installErrorsOccurred">Errors occurred during installation</message>
+	<message key="installer.installFilesDirError">The directory specified for uploaded files does not exist or is not writable.</message>
+	<message key="installer.publicFilesDirError">The public files directory does not exist or is not writable.</message>
+	<message key="installer.installFileError"><![CDATA[The installation file <tt>dbscripts/xml/install.xml</tt> does not exist or is not readable.]]></message>
+	<message key="installer.installParseDBFileError"><![CDATA[Error parsing the database installation file <tt>{$file}</tt>.]]></message>
+	<message key="installer.configFileError"><![CDATA[The configuration file <tt>config.inc.php</tt> does not exist or is not readable.]]></message>
+	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Warning:</b> If installation failed part way through database installation you may need to drop your Open Harvester Systems database or database tables before attempting to reinstall the database.]]></message>
+	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>IMPORTANT!</h4>
+<p>The installer could not automatically overwrite the configuration file. Before attempting to use the system, please open <tt>config.inc.php</tt> in a suitable text editor and replace its contents with the contents of the text field below.</p>]]></message>
+	<message key="installer.contentsOfConfigFile">Contents of configuration file</message>
+	<message key="installer.installerSQLStatements">SQL statements for installation</message>
+	<message key="installer.installationComplete"><![CDATA[<p>Installation of Open Harvester Systems has completed successfully.</p>
+<p>To begin using the system, <a href="{$loginUrl}">login</a> with the username and password entered on the previous page.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Upgrade of Open Harvester Systems to version {$version} has completed successfully.</p>
+<p>Don't forget to set the "installed" setting in your config.inc.php configuration file back to <i>On</i>.</p>]]></message>
+	<message key="installer.releaseNotes">Release Notes</message>
+	<message key="installer.checkYes">Yes</message>
+	<message key="installer.checkNo"><![CDATA[<span class="formError">NO</span>]]></message>
+
+	<!-- Locale messages -->
+	<message key="locale.primary">Primary Locale</message>
+	<message key="locale.supported">Supported Locales</message>
+
+	<!-- Login Messages -->
+	<message key="user.changePassword">Change Password</message>
+	<message key="user.editMyProfile">Edit My Profile</message>
+	<message key="user.changeMyPassword">Change My Password</message>
+	<message key="user.myAccount">My Account</message>
+	<message key="user.userHome">User Home</message>
+	<message key="user.profile">Profile</message>
+	<message key="user.register">Register</message>
+	<message key="user.login">Log In</message>
+	<message key="user.logOut">Log Out</message>
+	<message key="user.username">Username</message>
+	<message key="user.password">Password</message>
+	<message key="user.sendPassword">Confirmation</message>
+	<message key="user.sendPassword.description">Send me a confirmation email including my username and password</message>
+	<message key="user.salutation">Salutation</message>
+	<message key="user.name">Name</message>
+	<message key="user.firstName">First name</message>
+	<message key="user.middleName">Middle name</message>
+	<message key="user.lastName">Last name</message>
+	<message key="user.initials">Initials</message>
+	<message key="user.initialsExample">Joan Alice Smith = JAS</message>
+	<message key="user.gender">Gender</message>
+	<message key="user.masculine">M</message>
+	<message key="user.feminine">F</message>
+	<message key="user.title">Title</message>
+	<message key="user.signature">Signature</message>
+	<message key="user.affiliation">Affiliation</message>
+	<message key="user.affiliations">Affiliations</message>
+	<message key="user.email">Email</message>
+	<message key="user.url">URL</message>
+	<message key="user.phone">Phone</message>
+	<message key="user.fax">Fax</message>
+	<message key="user.interests">Reviewing interests</message>
+	<message key="user.mailingAddress">Mailing address</message>
+	<message key="user.biography">Bio statement</message>
+	<message key="user.biography.description">(E.g., department and rank)</message>
+	<message key="user.workingLanguages">Working languages</message>
+	<message key="user.dateRegistered">Date registered</message>
+	<message key="user.dateLastLogin">Last login</message>
+	<message key="user.register.registrationDisabled">This site is currently not accepting user registrations.</message>
+	<message key="user.register.form.passwordLengthTooShort">The password you entered is not long enough.</message>
+	<message key="user.register.registerAs">Register as</message>
+	<message key="user.register.completeForm">Fill in this form to register with this journal.</message>
+	<message key="user.register.submitterDescription">Archive Managers can submit archives for indexing.</message>
+	<message key="user.register.repeatPassword">Repeat Password</message>
+	<message key="user.register.usernameRestriction">The username must contain only lowercase letters, numbers, and hyphens/underscores.</message>
+	<message key="user.register.passwordLengthRestriction">The password must be at least {$length} characters.</message>
+	<message key="user.register.form.usernameExists">The selected username is already in use by another user.</message>
+	<message key="user.register.form.usernameAlphaNumeric">The username can contain only alphanumeric characters, underscores, and hyphens, and must begin and end with an alphanumeric character.</message>
+	<message key="user.register.form.emailExists">The selected email address is already in use by another user.</message>
+	<message key="user.register.form.passwordsDoNotMatch">The passwords do not match.</message>
+	<message key="user.login.loginError">Invalid username or password. Please try again.</message>
+	<message key="user.login.rememberMe">Remember me</message>
+	<message key="user.login.rememberUsernameAndPassword">Remember my username and password</message>
+
+	<!-- Forms -->
+	<message key="form.errorsOccurred">Errors occurred processing this form</message>
+	<message key="form.postRequired">The form was not submitted properly.</message>
+	<message key="form.formLanguage">Form Language</message>
+	<message key="form.formLanguage.description">To enter the information below in additional languages, first select the language.</message>
+
+	<message key="user.noRoles">Your account does not currently have any roles. Please choose from the actions below:</message>
+	<message key="user.noRoles.submitArchive">Submit an archive</message>
+	<message key="user.noRoles.enableSubmitClosed">Registration as an archive submitter is currently disabled.</message>
+
+	<!-- Roles -->
+	<message key="user.role.siteAdmin">Site Administrator</message>
+	<message key="user.role.submitter">Archive Manager</message>
+	<message key="user.role.submitters">Archive Managers</message>
+
+	<!-- Archive entity messages -->
+	<message key="archive.archives">Archives</message>
+	<message key="archive.title">Title</message>
+	<message key="archive.image">Archive Image</message>
+	<message key="archive.image.profileImageInvalid">The Archive Image was not valid. Accepted formats are GIF, JPG, and PNG.</message>
+	<message key="archive.recordCount">Record Count</message>
+	<message key="archive.url">URL</message>
+	<message key="archive.publicArchiveId">Public ID</message>
+	<message key="archive.description">Description</message>
+	<message key="archive.type">Type</message>
+	<message key="archive.type.invalid">Invalid archive type.</message>
+	<message key="archive.lastIndexed">Last Indexed</message>
+
+	<!-- Site Administration -->
+	<message key="admin.siteAdmin">Site Administration</message>
+	<message key="admin.siteSettings">Site Settings</message>
+	<message key="admin.layout">Layout</message>
+	<message key="admin.sortOrders">Sort Orders</message>
+	<message key="admin.archives">Archives</message>
+	<message key="admin.plugins">Plugins</message>
+	<message key="admin.rtAdmin">Reading Tools</message>
+
+	<message key="admin.archives.manage">Manage Archive</message>
+	<message key="admin.archives.manage.numRecords">Number of Papers Indexed</message>
+	<message key="admin.archives.manage.updateIndex">Update Metadata Index</message>
+	<message key="admin.archives.manage.flush">Flush Metadata</message>
+	<message key="admin.archives.manage.updateIndex.confirm">Are you sure you wish to update the metadata index? This operation may take several minutes, depending on the size of the archive.</message>
+	<message key="admin.archives.confirmDelete">Are you sure you wish to delete this archive and all of its records?</message>
+	<message key="admin.archive.manage.updateIndex.success">The metadata index has been updated. {$recordCount} records are currently indexed.</message>
+	<message key="admin.archive.manage.updateIndex.failure">The metadata index could not be updated. The following error(s) occurred:</message>
+	<message key="admin.archive.manage.updateIndex.return">Return to management</message>
+	<message key="admin.archive.manage.updateIndex.failure.generic">An unknown error occurred.</message>
+
+	<message key="admin.settings.general">General</message>
+	<message key="admin.settings.administration">Administration</message>
+
+	<message key="admin.settings.siteTitle">Site title</message>
+	<message key="admin.settings.introduction">Introduction</message>
+	<message key="admin.settings.aboutDescription">About the Site description</message>
+	<message key="admin.settings.form.titleRequired">A title is required.</message>
+	<message key="admin.settings.styleSheet">Style sheet</message>
+	<message key="admin.settings.theme">Theme</message>
+	<message key="admin.settings.styleSheet.invalid">Invalid stylesheet format. Accepted format is .css.</message>
+	<message key="admin.settings.customLogo">Custom logo</message>
+	<message key="admin.settings.customLogo.invalid">Invalid custom logo format. Accepted formats are .gif, .jpg, and .png.</message>
+	<message key="admin.settings.contactName">Name of principal contact</message>
+	<message key="admin.settings.contactEmail">Email of principal contact</message>
+	<message key="admin.settings.minPasswordLength">Minimum password length</message>
+	<message key="admin.settings.form.contactNameRequired">The name of the principal contact is required.</message>
+	<message key="admin.settings.form.contactEmailRequired">The email address of the principal contact is required.</message>
+	<message key="admin.settings.form.minPasswordLengthRequired">You must enter a minimum password length of at least 4 characters.</message>
+	<message key="admin.settings.passwordCharacters">characters</message>
+	<message key="admin.settings.options">Options</message>
+	<message key="admin.settings.options.enableSubmit">Enable anyone to register and submit their archives for indexing.</message>
+	<message key="admin.settings.options.disableSubmissions">Submissions are disabled by default and must be enabled by the administrator.</message>
+	<message key="admin.settings.siteLanguage">Site language</message>
+
+	<message key="admin.siteManagement">Site Management</message>
+	<message key="admin.adminFunctions">Administrative Functions</message>
+	<message key="admin.expireSessions">Expire User Sessions</message>
+	<message key="admin.confirmExpireSessions">Are you sure you want to expire all user sessions? You will be forced to log in again.</message>
+	<message key="admin.clearTemplateCache">Clear Template Cache</message>
+	<message key="admin.clearDataCache">Clear Data Caches</message>
+	<message key="admin.confirmClearTemplateCache">Are you sure you want to clear the cache of compiled templates?</message>
+	<message key="admin.systemInformation">System Information</message>
+
+	<!-- Users -->
+	<message key="admin.users">Users</message>
+	<message key="admin.people">People</message>
+	<message key="admin.people.allUsers">All Users</message>
+	<message key="admin.people.createUser">Create User</message>
+	<message key="admin.people.noAdministrativeRights"><![CDATA[Sorry, you do not have administrative rights over this user. This may be because:
+		<ul>
+			<li>The user is a site administrator</li>
+			<li>The user is active in journals you do not manage</li>
+		</ul>
+	This task must be performed by a site administrator.
+	]]></message>
+	<message key="admin.people.mustChooseRole">Please select a role at the top of the page before clicking "Enroll User".</message>
+	<message key="admin.people.editUser">Edit User</message>
+	<message key="admin.people.enrollExistingUser">Enroll an Existing User</message>
+	<message key="admin.people.enroll">Enroll User</message>
+	<message key="admin.people.enrollment">Enrollment</message>
+	<message key="admin.people.roleEnrollment">{$role} Enrollment</message>
+	<message key="admin.people.unenroll">Unenroll</message>
+	<message key="admin.people.confirmUnenroll">Unenroll this user?</message>
+	<message key="admin.people.mergeUsers.confirm">Are you sure you wish to merge the account with the username "{$oldUsername}" into the account with the username "{$newUsername}"? The account with the username "{$oldUsername}" will not exist afterwards. This action is not reversible.</message>
+	<message key="admin.people.confirmRemove">Remove this user from this journal? This action will unenroll the user from all roles within this journal.</message>
+	<message key="admin.people.confirmDisable">Disable this user? This will prevent the user from logging into the system.
+
+You may optionally provide the user with a reason for disabling their account.</message>
+	<message key="admin.people.noneEnrolled">No enrolled users.</message>
+	<message key="admin.people.enrollSelected">Enroll Selected Users</message>
+	<message key="admin.people.noMatchingUsers">No matching users.</message>
+	<message key="admin.people.saveAndCreateAnotherUser">Save and Create Another</message>
+	<message key="admin.people.userCreatedSuccessfully">User created successfully.</message>
+	<message key="admin.people.authSource">Authentication source</message>
+	<message key="admin.people.enrollUserAs">Enroll user as</message>
+	<message key="admin.people.doNotEnroll">With no role</message>
+	<message key="admin.people.enrollUserAsDescription">Users can be assigned to, or removed from, a role at any point.</message>
+	<message key="admin.people.invalidUser">Sorry, the requested user does not exist.</message>
+	<message key="admin.people.createUserGeneratePassword">Generate a random password.</message>
+	<message key="admin.people.createUserSendNotify">Send the user a welcome email containing their username and password.</message>
+	<message key="admin.people.mustProvideName">Please provide at least a last name for the user first.</message>
+	<message key="admin.people.userMustChangePassword">Require the user to change their password the next time they log in.</message>
+	<message key="admin.people.disable">Disable</message>
+	<message key="admin.people.enable">Enable</message>
+	<message key="admin.people.remove">Remove</message>
+	<message key="admin.people.emailUsers">Email Users</message>
+	<message key="admin.people.emailUsers.emailSelectedUsers">Email selected users</message>
+	<message key="admin.people.emailUsers.emailUsersEnrolledAs">Email users enrolled as</message>
+	<message key="admin.people.emailUsers.selectUsers">Select the users you would like to email by checking the boxes beside their names</message>
+	<message key="admin.people.emailUsers.selectTemplate">Select a template</message>
+	<message key="admin.people.emailUsers.selectLocale">Select a locale</message>
+
+	<message key="admin.people.editProfile">Edit Profile</message>
+
+	<message key="admin.people.signInAsUser">Log In as User</message>
+	<message key="admin.people.signInAs">Log In As</message>
+	
+
+	<!-- Layout -->
+	<message key="admin.setup.layout.leftSidebar">Left Sidebar</message>
+	<message key="admin.setup.layout.unselected">Unselected</message>
+	<message key="admin.setup.layout.rightSidebar">Right Sidebar</message>
+
+	<!-- Sort Orders -->
+	<message key="admin.sortOrders.name">Name</message>
+	<message key="admin.sortOrders.type">Type</message>
+	<message key="admin.sortOrders.status">Status</message>
+	<message key="admin.sortOrders.type.string">Text</message>
+	<message key="admin.sortOrders.type.number">Number</message>
+	<message key="admin.sortOrders.type.date">Date</message>
+	<message key="admin.sortOrders.fields">Fields</message>
+	<message key="admin.sortOrders.noneCreated">No sort orders have been created.</message>
+	<message key="admin.sortOrders.edit">Edit Sort Order</message>
+	<message key="admin.sortOrders.create">Create Sort Order</message>
+	<message key="admin.sortOrders.confirmDelete">Are you sure you wish to delete this sorting order?</message>
+	<message key="admin.sortOrders.form.nameRequired">A name is required for this sort ordering.</message>
+	<message key="admin.sortOrders.form.typeRequired">A valid type is required for this sort ordering.</message>
+
+	<!-- Archives -->
+	<message key="admin.archives.addArchive">Add Archive</message>
+	<message key="admin.archives.editArchive">Edit Archive</message>
+	<message key="admin.archives.manageArchives">Manage Archives</message>
+	<message key="admin.archives.noneCreated">None Created</message>
+	<message key="admin.archives.form.titleRequired">A title is required.</message>
+	<message key="admin.archives.form.urlRequired">The URL field is required.</message>
+	<message key="admin.archives.form.publicArchiveIdExists">Another archive already exists with the specified public archive ID. Please choose another.</message>
+	<message key="admin.archives.form.url.description">e.g. http://www.yourarchive.com</message>
+	<message key="admin.archives.form.publicArchiveId.description">This unique identifier can be used in URL-based searches to identify this archive.</message>
+	
+	<!-- Languages -->
+	<message key="admin.languages.languageSettings">Language Settings</message>
+	<message key="admin.languages.installLanguages">Install Languages</message>
+	<message key="admin.languages.primaryLocaleInstructions">This will be the default language for the site.</message>
+	<message key="admin.languages.supportedLocalesInstructions">Select all locales to support on the site. If multiple locales are not selected, the language toggle menu will not appear and extended language settings will not be available.</message>
+	<message key="admin.languages.languageOptions">Language options</message>
+	<message key="admin.languages.installedLocales">Installed Locales</message>
+	<message key="admin.languages.reload">Reload Locale</message>
+	<message key="admin.languages.confirmReload">Are you sure you want to reload this locale? This will erase any existing locale-specific data such as customized email templates.</message>
+	<message key="admin.languages.uninstall">Uninstall Locale</message>
+	<message key="admin.locale.maybeIncomplete">Marked locales may be incomplete.</message>
+	<message key="admin.languages.confirmUninstall">Are you sure you want to uninstall this locale?</message>
+	<message key="admin.languages.installNewLocales">Install New Locales</message>
+	<message key="admin.languages.installNewLocalesInstructions">Select any additional locales to install support for in this system. See the Open Harvester Systems documentation for information on adding support for new languages.</message>
+	<message key="admin.languages.noLocalesAvailable">No additional locales are available for installation.</message>
+	<message key="admin.languages.installLocales">Install</message>
+	
+	<!-- System Information -->
+	<message key="admin.systemVersion">Open Harvester Systems Version</message>
+	<message key="admin.systemConfiguration">Open Harvester Systems Configuration</message>
+	<message key="admin.serverInformation">Server Information</message>
+	<message key="admin.currentVersion">Current version</message>
+	<message key="admin.versionHistory">Version history</message>
+	<message key="admin.version">Version</message>
+	<message key="admin.versionMajor">Major</message>
+	<message key="admin.versionMinor">Minor</message>
+	<message key="admin.versionRevision">Revision</message>
+	<message key="admin.versionBuild">Build</message>
+	<message key="admin.dateInstalled">Date installed</message>
+	<message key="admin.systemConfigurationDescription"><![CDATA[Open Harvester Systems configuration settings from <tt>config.inc.php</tt>.]]></message>
+	<message key="admin.serverInformationDescription"><![CDATA[Basic operating system and server software versions. Click on <span class="highlight">Extended PHP Information</span> to view extended details of this server's PHP configuration.]]></message>
+	<message key="admin.phpInfo">Extended PHP Information</message>
+	<message key="admin.server.platform">OS platform</message>
+	<message key="admin.server.phpVersion">PHP version</message>
+	<message key="admin.server.apacheVersion">Apache version</message>
+	<message key="admin.server.dbDriver">Database driver</message>
+	<message key="admin.server.dbVersion">Database server version</message>
+	<message key="admin.displayNewSystemConfig">Display New Configuration</message>
+	<message key="admin.systemConfigFileReadError"><![CDATA[The configuration file <tt>config.inc.php</tt> does not exist, is not readable, or is invalid.]]></message>
+	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>NOTE!</div>
+<p>The system could not automatically overwrite the configuration file. To apply your configuration changes you must open <tt>config.inc.php</tt> in a suitable text editor and replace its contents with the contents of the text field below.</p>]]></message>
+	<message key="admin.displayConfigFileInstructions"><![CDATA[The contents of your updated configuration are displayed below. To apply the configuration changes you must open <tt>config.inc.php</tt> in a suitable text editor and replace its contents with the contents of the text field below.]]></message>
+	<message key="admin.configFileUpdatedInstructions"><![CDATA[Your configuration file has been successfully updated. Please note that if your site no longer functions correctly you may need to manually fix your configuration by editing <tt>config.inc.php</tt> directly.]]></message>
+	<message key="admin.contentsOfConfigFile">Contents of configuration file</message>
+	<message key="admin.version.checkForUpdates">Check for updates</message>
+	<message key="admin.version.latest">Latest version</message>
+	<message key="admin.version.upToDate">Your system is up-to-date</message>
+	<message key="admin.version.updateAvailable">An updated version is available</message>
+	<message key="admin.version.downloadPackage">Download</message>
+	<message key="admin.version.downloadPatch">Download Patch</message>
+	<message key="admin.version.moreInfo">More Information</message>
+	
+	<!-- Sidebar Messages -->
+	<message key="sidebar.harvesterStats">{$siteTitle} Stats</message>
+	<message key="sidebar.harvesterStats.description"><![CDATA[{$siteTitle} currently has <strong>{$recordCount}</strong> papers from <strong>{$archiveCount}</strong> archive(s) indexed.]]></message>
+	<message key="sidebar.addYourArchive">Add Your Archive</message>
+	<message key="sidebar.addYourArchive.description"><![CDATA[<a href="{$addUrl}">Click here</a> to add your system to our index.]]></message>
+
+	<!-- Defaults -->
+	<message key="default.siteIntro"><![CDATA[<strong>Welcome to the Public Knowledge Project's metadata archive...</strong>
+	
+	To improve the accuracy of searching within the PKP System, authors have been asked to index their work, where applicable, by discipline(s), topics, genre, method, coverage, and sample. This allows you to search for "empirical" versus "historical" studies, for example, under "index terms." You can also view a document's index terms by selecting the complete record from among the search results.]]></message>
+	<message key="default.emailSignature"><![CDATA[________________________________________________________________________
+	Open Harvester Systems
+	{$indexUrl}
+	]]></message>
+	<message key="default.footer"><![CDATA[&copy; 2005-2009 <a href="http://pkp.sfu.ca/harvester2">Alec Smecher and John Willinsky</a>]]></message>
+
+	<message key="about.harvester">About the Harvester</message>
+	<message key="about.harvester.description"><![CDATA[The PKP Open Archives Harvester is a free metadata indexing system developed by the Public Knowledge Project through its federally funded efforts to expand and improve access to research. The PKP OAI Harvester allows you to create a searchable index of the metadata from Open Archives Initiative-compliant archives, such as sites using Open Journal Systems or Open Conference Systems.
+	
+	The PKP OAI Harvester is currently compatible with versions 1.1 and 2.0 of the OAI Harvesting Protocol.]]></message>
+
+	<!-- Search messages -->
+	<message key="search.syntaxInstructions"><![CDATA[<br /><b>Search tips:</b> <ul>
+<li>Search terms are case-insensitive</li>
+<li>Common words are ignored</li>
+<li>By default only entries containing <i>all</i> terms in the query are returned (i.e., <i>AND</i> is implied)</li>
+<li>Combine multiple words with <i>OR</i> to find articles containing either term; e.g., <i>education OR research</i></li>
+<li>Use parentheses to create more complex queries; e.g., <i>archive ((journal OR conference) NOT theses)</i></li>
+<li>Search for an exact phrase by putting it in quotes; e.g., <i>"open access publishing"</i></li>
+<li>Exclude a word by prefixing it with <b>-</b> or <i>NOT</i>; e.g. <i>online -politics</i> or <i>online NOT politics</i></li>
+<li>Use <b>*</b> in a term as a wildcard to match any sequence of characters; e.g., <i>soci* morality</i> would match documents containing "sociological" or "societal"</li>
+</ul><b>Note</b>: After selecting a search result item (thumbnail) you will leave the WWDL site and go directly to the institutional site where the item is held. In order to return to the WWDL site, it will be necessary to utilize the "Back" function on the browser.]]></message>
+	<message key="search.operator.not">not</message>
+	<message key="search.operator.and">and</message>
+	<message key="search.operator.or">or</message>
+	<message key="search.select.none">(None)</message>
+	<message key="search.allFields">All Fields</message>
+
+	<message key="search.fields.more">More Fields</message>
+	<message key="search.fields.less">Less Fields</message>
+	<message key="search.inAllArchives">in all archives</message>
+	<message key="search.searchResults">Search Results</message>
+	<message key="search.noKeywordError">No search terms were entered. You must enter at least one search term.</message>
+	<message key="search.noResults">No Results</message>
+	<message key="search.reviseSearch">Revise Search</message>
+	<message key="search.allArchives">All Archives</message>
+
+	<!-- Browse messages -->
+	<message key="browse.browseAll">All Archives</message>
+	<message key="browse.recordCount">({$count} Records)</message>
+	<message key="browse.viewRecord">View Record</message>
+	<message key="browse.viewOriginal">View Original</message>
+	<message key="browse.sortBy">Sort By</message>
+	<message key="browse.sortBy.none">None</message>
+	<message key="browse.archiveInfo">View Archive Info</message>
+	<message key="browse.browseRecords">Browse Records</message>
+
+	<message key="record.viewRecord">Record Details</message>
+	<message key="record.field">Field</message>
+	<message key="record.value">Value</message>
+	<message key="record.records">Records</message>
+
+	<!-- Debug messages -->
+	<message key="debug.executionTime">Page generated in</message>
+	<message key="debug.notes.helpMappingLoad">Reloaded XML help mapping file {$filename} in search of {$id}.</message>
+	<message key="debug.databaseQueries">Number of database queries</message>
+	<message key="debug.notes">Notes:</message>
+	<message key="debug.notes.localeLoad">Loaded locale file "{$localeFile}" from XML</message>
+	<message key="debug.notes.localeListLoad">Loaded locale list "{$localeList}" from XML</message>
+	<message key="debug.notes.missingLocaleKey">Missing locale key "{$key}".</message>
+	<message key="debug.notes.schemaMapLoad">Load schema map "{$schemaMap}" from XML</message>
+
+	<!-- Help messages -->
+	<message key="help.help">Help</message>
+	<message key="help.harvesterHelp">{$siteTitle} Help</message>
+	<message key="help.toc">Table of Contents</message>	
+	<message key="help.searchResults">Search Results</message>
+	<message key="help.matchesFound">{$matches} matches found</message>
+	<message key="help.noMatchingTopics">No matching help topics were found.</message>
+	<message key="help.helpIndex">Help Index</message>
+	<message key="help.contents">Contents</message>
+	<message key="help.upALevel">Up a Level</message>	
+	<message key="help.relatedTopics">Related Topics</message>
+	<message key="help.search">Search Help</message>
+	<message key="help.searchFor">Search help topics for</message>
+	<message key="help.searchResultsFor">Results for</message>
+
+	<!-- Plugin categories and descriptions -->
+	<message key="plugins.categories.generic">Generic Plugins</message>
+	<message key="plugins.categories.generic.description">This category contains general-purpose plugins that are not better suited to other categories.</message>
+
+	<message key="plugins.categories.blocks">Block Plugins</message>
+	<message key="plugins.categories.blocks.description">Block Plugins are pluggable UI components, such as the various sidebar tools.</message>
+
+	<message key="plugins.categories.harvesters">Harvester Plugins</message>
+	<message key="plugins.categories.harvesters.description">This category contains plugins that implement various harvesting protocols such as OAI.</message>
+
+	<message key="plugins.categories.preprocessors">Preprocessor Plugins</message>
+	<message key="plugins.categories.preprocessors.description">This category contains plugins that process harvested data before it is added to the Open Harvester Systems repository in its native metadata format.</message>
+
+	<message key="plugins.categories.postprocessors">Postprocessor Plugins</message>
+	<message key="plugins.categories.postprocessors.description">This category contains plugins that process harvested data after it has been added to the Open Harvester Systems repository in its native metadata format but before it is indexed for searching.</message>
+
+	<message key="plugins.categories.schemas">Schema Plugins</message>
+	<message key="plugins.categories.schemas.description">This category contains plugins that implement various metadata formats.</message>
+
+	<message key="plugins.categories.themes">Theme Plugins</message>
+	<message key="plugins.categories.themes.description">Theme Plugins can be used to change the system's appearance.</message>
+
+	<message key="manager.plugins.disable">Disable</message>
+	<message key="manager.plugins.enable">Enable</message>
+	
+	<message key="manager.plugins.copyError">Plugin was not successfully copied. This may be a permissions problem. Please make sure that the web server is able to write to the plugins directory (including subdirectories) but don't forget to secure it again later.</message>
+	<message key="manager.plugins.doesNotExist">Plugin does not exist</message>
+	<message key="manager.plugins.delete">Delete Plugin</message>
+	<message key="manager.plugins.deleteConfirm">Are you sure you wish to delete this plugin from the system?</message>
+	<message key="manager.plugins.deleteDescription">By clicking delete, you will delete the plugin from the server's file system.</message>
+	<message key="manager.plugins.deleteError">Plugin could not be deleted from the file system. This may be a permissions problem. Please make sure that the web server is able to write to the plugins directory (including subdirectories) but don't forget to secure it again later.</message>
+	<message key="manager.plugins.deleteSuccess">Plugin successfuly deleted</message>
+	<message key="manager.plugins.description">This page allows the Administrator to review and potentially configure the plugins that are currently installed. Plugins are divided into categories, according to their function. The categories are listed below, and within each category, its current set of plugins.</message>
+	<message key="manager.plugins.fileSelectError">Please select a file first</message>
+	<message key="manager.plugins.install">Install A New Plugin</message>
+	<message key="manager.plugins.installDescription">This form allows you to upload and install a new plugin.  Please ensure the plugin is compressed as a .tar.gz file.</message>
+	<message key="manager.plugins.installedVersionNewer">Plugin already exists, and is newer or equal to installed version</message>
+	<message key="manager.plugins.installedVersionOlder">Plugin already exists, and is older or equal to the installed version</message>
+	<message key="manager.plugins.installFailed">Installation failed</message>
+	<message key="manager.plugins.installSuccessful">Successfully installed version</message>
+	<message key="manager.plugins.invalidPluginArchive">The uploaded plugin archive does not contain a folder that corresponds to the plugin name.</message>
+	<message key="manager.plugins.wrongCategory">The uploaded plugin does not fit the category of the upgraded plugin.</message>
+	<message key="manager.plugins.wrongName">The version.xml in the uploaded plugin contains a plugin name that does not fit the name of the upgraded plugin.</message>
+	<message key="manager.plugins.pleaseInstall">Plugin does not exist.  Please Install instead</message>
+	<message key="manager.plugins.pleaseUpgrade">Plugin already exists, but is newer than installed version.  Please upgrade instead</message>
+	<message key="manager.plugins.tarCommandNotFound">The tar command is not available. Please correctly configure it in your "config.inc.php".</message>
+	<message key="manager.plugins.upgrade">Upgrade Plugin</message>
+	<message key="manager.plugins.upgradeDescription">This form allows you to upgrade a plugin.  Please ensure the plugin is compressed as a .tar.gz file.</message>
+	<message key="manager.plugins.upgradeFailed">Upgrade failed</message>
+	<message key="manager.plugins.upgradeSuccessful">Successfully upgraded to version</message>
+	<message key="manager.plugins.uploadError">Error uploading file</message>
+	<message key="manager.plugins.uploadPluginDir">Select plugin file</message>
+	<message key="manager.plugins.versionFileInvalid">version.xml in plugin directory contains invalid data.</message>
+	<message key="manager.plugins.versionFileNotFound">version.xml not found in plugin directory</message>
+
+	<!-- Reading Tools entries -->
+	<message key="rt.readingTools">Reading Tools</message>
+
+	<message key="rt.admin.status">Status</message>
+	<message key="rt.admin.configuration">Configuration</message>
+	<message key="rt.admin.management">Management</message>
+
+	<!-- RT Settings -->
+	<message key="rt.admin.settings">Settings</message>
+	<message key="rt.admin.desc">Open Harvester Systems allows the Administrator to designate which Reading Tools will be used for each archive. In addition, a site-wide set of Reading Tools can be provided as a default. Please choose the context for which you wish to configure the Reading Tools.</message>
+	<message key="rt.admin.default">Choose Default Reading Tools</message>
+
+	<message key="rt.admin.selectedVersion">Selected version</message>
+	<message key="rt.admin.rtDisabled">Disabled</message>
+	<message key="rt.admin.rtEnable">Enter Settings to enable the RT or change the selected version.</message>
+
+	<message key="rt.admin.versionDescription">Please select the version of the Reading Tools that best matches the requirements of this archive.</message>
+
+	<message key="rt.admin.options">Options</message>
+
+	<message key="rt.admin.settings.disable">Disable Reading Tools</message>
+	<message key="rt.admin.settings.bibFormat">Bibliographic format for citation capture</message>
+	<message key="rt.admin.settings.captureCite">Bibliographic info (Displays the citation of an article in standard format, with support for the following citation management software: EndNote, Reference Manager, and ProCite)</message>
+	<message key="rt.admin.settings.viewMetadata">Indexing info (Displays an item's indexing information generated by the author and the system)</message>
+	<message key="rt.admin.settings.supplementaryFiles">See supplementary files (Displays a list of any supplementary files that the author included with an item)</message>
+	<message key="rt.admin.settings.printerFriendly">Go to print version (Takes reader to a printer-friendly version of an item)</message>
+	<message key="rt.admin.settings.authorBio">About the author (Displays the bio statements entered by the author)</message>
+	<message key="rt.admin.settings.defineTerms">Definition of terms (Enables readers to double-click on any word in an item and send the word to a dictionary)</message>
+	<message key="rt.admin.settings.addComment">Add comment to item (Enables readers to post comments). Reader Comments must be enabled in Setup</message>
+	<message key="rt.admin.settings.emailAuthor">Email the author (Takes readers to an email template with the author's email)</message>
+	<message key="rt.admin.settings.emailOthers">Send item to colleague (Takes readers to an email template with the title of item as its subject)</message>
+
+	<!-- RT Versions -->
+	<message key="rt.admin.versions.restoreVersions">Restore Versions to Defaults</message>
+	<message key="rt.admin.versions.createVersion">Create Version</message>
+	<message key="rt.admin.versions.confirmRestore">Are you sure you wish to irreversibly restore all versions to their defaults? If so, you will need to choose an active Version on the Settings page.</message>
+	<message key="rt.admin.versions.confirmDelete">Are you sure you wish to delete this Version and all associated Contexts and Searches?</message>
+	<message key="rt.admin.versions.edit.editVersion">Edit Version</message>
+	<message key="rt.admin.versions.metadata">Metadata</message>
+	<message key="rt.admin.versions.export">Export</message>
+	<message key="rt.admin.versions.importVersion">Import Version</message>
+
+	<!-- RT Contexts -->
+	<message key="rt.admin.contexts.edit.editContext">Edit Context</message>
+	<message key="rt.admin.contexts.createContext">Create Context</message>
+	<message key="rt.admin.contexts.confirmDelete">Are you sure you wish to delete this Context and all associated Searches?</message>
+	<message key="rt.admin.contexts.metadata">Metadata</message>
+	<message key="rt.admin.contexts.options">Options</message>
+	<message key="rt.admin.contexts.options.citedBy">Use author names as default search terms and describe the context as a search for citations to the article.</message>
+	<message key="rt.admin.contexts.options.authorTerms">Use author names as default search terms to enable users to find other works by the authors for this item (e.g., for an "Other Works" context)</message>
+	<message key="rt.admin.contexts.options.geoTerms">Use geographical indexing data as default search terms.</message>
+	<message key="rt.admin.contexts.options.defineTerms">Use the word highlighted by the reader as default search term or be left blank if none has been selected for this item (e.g., for a "Definition of terms" context).</message>
+
+	<!-- RT Searches -->
+	<message key="rt.admin.searches.edit.editSearch">Edit Search</message>
+	<message key="rt.admin.searches.confirmDelete">Are you sure you wish to delete this Search?</message>
+	<message key="rt.admin.searches.createSearch">Create Search</message>
+
+	<message key="rt.admin.validateUrls">Validate URLs</message>
+	<message key="rt.admin.validateUrls.description"><![CDATA[Possibly invalid URLs for search sites are displayed below.<br/>
+You should manually verify any URLs marked as invalid, as this test is not 100% accurate.<br/>
+Validation may fail on search URLs that require posted form data.]]></message>
+	<message key="rt.admin.validateUrls.validate">Validate</message>
+	<message key="rt.admin.validateUrls.urlIsInvalid">{$url} is not valid.</message>
+	<message key="rt.admin.validateUrls.ok">OK</message>
+	<message key="rt.admin.validateUrls.complete">Validation complete.</message>
+	
+	<!-- RT Entities -->
+	<message key="rt.version">Version</message>
+	<message key="rt.versions">Versions</message>
+	<message key="rt.version.title">Title</message>
+	<message key="rt.version.locale">Locale</message>
+	<message key="rt.version.key">Key</message>
+	<message key="rt.version.description">Description</message>
+
+	<message key="rt.context">Context</message>
+	<message key="rt.contexts">Contexts</message>
+	<message key="rt.context.title">Title</message>
+	<message key="rt.context.abbrev">Abbrev</message>
+	<message key="rt.context.description">Description</message>
+	<message key="rt.context.order">Order</message>
+
+	<message key="rt.search">Search</message>
+	<message key="rt.searches">Searches</message>
+	<message key="rt.search.title">Title</message>
+	<message key="rt.search.url">URL</message>
+	<message key="rt.search.order">Order</message>
+	<message key="rt.search.description">Description</message>
+	<message key="rt.search.searchUrl">Search URL</message>
+	<message key="rt.search.searchPost">Post data</message>
+
+	<message key="rt.forThisRecord">For this record</message>
+	<message key="rt.relatedItems">Find related items among</message>
+
+	<message key="rt.context.searchTerms">Search Terms</message>
+	<message key="rt.context.termToDefine">Word to define</message>
+	<message key="rt.context.searchDescription">The search terms can be altered or deleted by the reader; two or three short, precise terms or phrases produced the best Boolean (AND) searches. To learn more about the resources searched, click on ABOUT. These resources have been selected for their relevance and open (free) access to all or part of their contents.</message>
+	<message key="rt.context.defineTermsDescription">Double click on any word in the text and it will appear in the Word-to-Define box. You can also type or paste a word into the box. Then use the search function to find a definition for the word. To learn more about the resource searched, click on the information symbol. These resources have been selected because of their relevance and their open (free) access to all or part of their contents.</message>
+	<message key="rt.context.authorTermsDescription">For items with more than one author, leave all names checked to search for similarly co-authored work, or search one at a time by checking only a single name. To learn more about the resource searched, click on the information symbol. These resources have been selected because of their relevance and their open (free) access to all or part of their contents.</message>
+	<message key="rt.context.citesContextDescription">If the article is indexed in Google Scholar, it may be accompanied by a "Cited by X" link, which leads to a list of works that cite it. As well, Google Scholar will list all items quoting the title and author. To access online resources that are only available through your research library, you may be able to go to Scholar Preferences in Google Scholar and activate the Library Links for your institution.</message>
+
+	<message key="rt.context.and">AND</message>
+
+	<!-- Profile -->
+	<message key="user.login.registerNewAccount">Not a user? Register with this site</message>
+	<message key="user.login.resetPasswordInstructions"><![CDATA[For security reasons, this system emails a reset password to registered users, rather than recalling the current password.<br /><br />Enter your email address below to reset your password. A confirmation will be sent to this email address.]]></message>
+	<message key="user.profile.editProfile">Edit Profile</message>
+	<message key="user.profile.form.firstNameRequired">A first name is required.</message>
+	<message key="user.profile.form.lastNameRequired">A last name is required.</message>
+	<message key="user.profile.form.emailRequired">A valid email address is required.</message>
+	<message key="user.profile.form.profileImageInvalid">Invalid profile image format or image too big. Accepted formats are .gif, .jpg, or .png, and the image must not exceed 150x150 pixels.</message>
+	<message key="user.profile.form.profileImage">Profile Image</message>
+	<message key="user.profile.form.urlInvalid">The specified URL is not valid. Please double-check the URL and try again. (Hint: Try adding http:// to the beginning of the URL.)</message>
+	<message key="user.profile.form.usernameRequired">A username is required.</message>
+	<message key="user.profile.form.passwordRequired">A password is required.</message>
+	<message key="user.profile.leavePasswordBlank">Leave the password fields blank to keep the current password.</message>
+	<message key="user.profile.oldPassword">Current password</message>
+	<message key="user.profile.newPassword">New password</message>
+	<message key="user.profile.repeatNewPassword">Repeat new password</message>
+	<message key="user.profile.changePasswordInstructions">Enter your current and new passwords below to change the password for your account.</message>
+	<message key="user.profile.form.oldPasswordInvalid">The current password you entered was incorrect.</message>
+	<message key="user.profile.form.newPasswordRequired">You must enter your new password.</message>
+	<message key="user.profile.form.publishedNotifications">New issue published email notifications</message>
+	<message key="user.profile.form.openAccessNotifications">Issue open access email notifications</message>
+	<message key="user.profile.publicProfile">User Profile</message>
+	
+	<!--
+	 *
+	 * MISC - Entries that do not belong in the other sections.
+	 *
+	 -->
+	<message key="icon.checked.alt">Checked</message>
+	<message key="icon.unchecked.alt">Unchecked</message>
+	<message key="icon.small.alt">Small</message>
+	<message key="icon.medium.alt">Medium</message>
+	<message key="icon.large.alt">Large</message>
+</locale>

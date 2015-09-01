@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  * siteSettings.xml
+  *
+  * Copyright (c) 2005-2012 Alec Smecher and John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Default site settings.
+  *
+  * $Id$
+  -->
+
+<!DOCTYPE siteSettings [
+	<!ELEMENT siteSettings (setting+)>
+	<!ELEMENT setting (name, value)>
+	<!ATTLIST setting
+		type (int|string|object) #REQUIRED
+		localized (true|false) #IMPLIED>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT value (#PCDATA | array)*>
+	<!ELEMENT element (#PCDATA | array)*>
+	<!ATTLIST element key CDATA #IMPLIED>
+	<!ELEMENT array (element+)>
+]>
+
+<siteSettings>
+	<setting type="int">
+		<name>numPageLinks</name>
+		<value>10</value>
+	</setting>
+	<setting type="int">
+		<name>itemsPerPage</name>
+		<value>25</value>
+	</setting>
+	<setting type="string">
+		<name>emailSignature</name>
+		<value>{translate key="default.siteSettings.emailSignature"}</value>
+	</setting>
+	<setting type="string" localized="true">
+		<name>title</name>
+		<value>{translate key="common.harvester2"}</value>
+	</setting>
+	<setting type="string" localized="true">
+		<name>intro</name>
+		<value>{translate key="default.siteIntro"}</value>
+	</setting>
+	<setting type="string" localized="true">
+		<name>contactName</name>
+		<value>{translate key="common.harvester2"}</value>
+	</setting>
+	<setting type="string" localized="true">
+		<name>contactEmail</name>
+		<value>{$adminEmail}</value>
+	</setting>
+	<setting type="string">
+		<name>footer</name>
+		<value>{translate key="default.footer"}</value>
+	</setting>
+	<setting type="string">
+		<name>defaultHarvesterPlugin</name>
+		<value>OAIHarvesterPlugin</value>
+	</setting>
+</siteSettings>
