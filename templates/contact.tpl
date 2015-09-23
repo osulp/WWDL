@@ -25,7 +25,7 @@
 	  fax: 970-491-1195<br />
 	email: <a href="mailto:dawn.paschal@colostate.edu">dawn.paschal@colostate.edu</a></p>
 
-	<p> For technical questions about this web site, contact Anna Neatrour, email: <a href="mailto:anna.neatrour@utah.edu">anna.neatrour@utah.edu</a>.</p>
+	<p> For technical questions about this web site, email: <a href="mailto:library.web@oregonstate.edu">library.web@oregonstate.edu</a>.</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>

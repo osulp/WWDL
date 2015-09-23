@@ -25,9 +25,9 @@
 
 <ul class="plain">
 	{php}
-	if($_SERVER['HTTP_HOST'] == "wwdl.sandbox.lib.utah.edu") {
-		echo '<li>&#187; <a href="/admin/transfer">Transfer Sandbox to Production</a></li>';
-	}
+	{*if($_SERVER['HTTP_HOST'] == "wwdl.sandbox.lib.utah.edu") {*}
+		{*echo '<li>&#187; <a href="/admin/transfer">Transfer Sandbox to Production</a></li>';*}
+	{*}*}
 	{/php}
 	<li>&#187; <a href="{url op="settings"}">{translate key="admin.siteSettings"}</a></li>
 	
