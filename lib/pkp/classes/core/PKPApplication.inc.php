@@ -34,7 +34,7 @@ class PKPApplication {
 		// This is primarily for static method warnings and warnings
 		// about use of ... =& new ... Static class members cannot be
 		// declared in PHP4 and ... =& new ... is deprecated since PHP 5.
-		$errorReportingLevel = E_ALL;
+		$errorReportingLevel = E_ERROR;
 		if (defined('E_STRICT')) $errorReportingLevel &= ~E_STRICT;
 		if (defined('E_DEPRECATED')) $errorReportingLevel &= ~E_DEPRECATED;
 		@error_reporting($errorReportingLevel);

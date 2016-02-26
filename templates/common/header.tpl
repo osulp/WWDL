@@ -110,7 +110,7 @@
 			<li><a href="/collections">Collections</a> </li>
 			<li><a href="/participants">Participants</a></li>
 			<li><a href="/exhibits" >Exhibits</a></li>
-			<li><a href="/blog" >News</a></li>
+			{*<li><a href="/blog" >News</a></li>*}
 			<li><a href="/guides" >Research Guides</a></li>
 			<li><a href="/contact" >Contact</a></li>
 		</ul>

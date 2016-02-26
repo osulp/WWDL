@@ -23,8 +23,8 @@
 			<p>The Western Waters Digital Library (WWDL) provides free public access to digital collections of significant primary and secondary resources on water in the western United States. These collections have been made available by research libraries belonging to the Greater Western Library Alliance (GWLA) and other academic library partners. The WWDL is a valuable resource for researchers, policy makers, scholars, Native American tribes, professionals working in various fields, and others interested in contemporary and historic water issues.</p>
 			</div>
 			<div class="span4">
-			<h4>Subscribe</h4>
-			<p><a href="http://westernwaters.org/blog/?feed=rss2"><img src="{$baseUrl}/img/rssIcon.png" alt="rss icon" style="margin-top: -3px;" /> WWDL RSS News Feed</a></p>
+			{*<h4>Subscribe</h4>*}
+			{*<p><a href="http://westernwaters.org/blog/?feed=rss2"><img src="{$baseUrl}/img/rssIcon.png" alt="rss icon" style="margin-top: -3px;" /> WWDL RSS News Feed</a></p>*}
 			<h4>Social</h4>
 			<ul class="unstyled inline social">
 				<li><a href="https://www.facebook.com/WesternWatersDigitalLibrary"><i class="icon-facebook-sign"></i></a></li>

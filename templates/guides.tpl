@@ -21,7 +21,7 @@
 	<li><a href="/guides?p=columbiariverbasin">Columbia River Basin</a> - WWDL collections focusing on Columbia River Basin research topics</li>
 	<li><a href="/guides?p=watercentersrepositories">Water Centers and Institutional Repositories</a> - A guide to current research materials in the Western Waters Digital Library</li>
 	<li><a href="/guides?p=findingaids">Finding Aids</a> - An overview of the finding aids collected by the Western Waters Digital Library</li>
-	<li><a href="http://campusguides.lib.utah.edu/westernwaters">Western Waters Digital Library Guide</a> - A general overview of the Western Waters Digital Library, in LibGuide format.</li>
+	{*<li><a href="http://campusguides.lib.utah.edu/westernwaters">Western Waters Digital Library Guide</a> - A general overview of the Western Waters Digital Library, in LibGuide format.</li>*}
 	</ul>
 	</div>
 	<div class="span4">

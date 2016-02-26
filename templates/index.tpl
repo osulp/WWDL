@@ -62,47 +62,86 @@
 	<div class="container">
 		<div class="mainContent home-news">
 			<div class="row-fluid">
-				<div class="span8">
-					<h3><span>Recent</span> News</h3>
-				{php}  include( $_SERVER["DOCUMENT_ROOT"] . "/wnl/news-feed.php"); {/php}
-				
-				</div>
-				<div class="span4">
+                {*<div class="span8">*}
+                    {*<h3><span>Recent</span> News</h3>*}
+                    {*{php}  include( $_SERVER["DOCUMENT_ROOT"] . "/wnl/news-feed.php"); {/php}*}
+                {*</div>*}
+                {*<div class="span4">*}
+                    {*<h3>Finding Aids</h3>*}
+                    {*<ul class="unstyled-list">*}
+                        {*<li><a href="http://findingaid.lib.byu.edu/viewItem/MSS%20146" target="_blank">Arthur V. Watkins Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,0" target="_blank">C. Gregory Crampton Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,7" target="_blank">Charles Eggert Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf7q2nb3b5/" target="_blank">Charles H. Lee Papers</a></li>*}
+                        {*<li><a href="http://content.wsulibs.wsu.edu/cdm-koester/wwdl_ead.html" target="_blank">Clifford Koester Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,3" target="_blank">Colorado Riverbed Case</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79245">Colorado Water Congress Collection</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79246">Delph E. Carpenter and Family </a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,4" target="_blank">Dorothy Harvey</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf958007kr/" target="_blank">Edward Hyatt Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,9" target="_blank">E. Richard Hart Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,6" target="_blank">Flaming Gorge Dam Collection</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,8" target="_blank">Floyd A. O’Neil</a></li>*}
+                        {*<li><a href="http://content.wsulibs.wsu.edu/cdm-banks/wwdl_ead.html" target="_blank">Frank A Banks Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf9489p11x/" target="_blank">Frank Adams Papers</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,5" target="_blank">Glen Canyon Archaeological Survey</a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,18" target="_blank">Institute of the North American West</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79247">Ival V. Goslin Water Resources Collection </a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3v19n78q/" target="_blank">James D. Schuyler Papers</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">James L. Ogilvie </a></li>*}
+                        {*<li><a href="http://content.lib.utah.edu/u?/ww-EAD,13" target="_blank">John Boyden Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf4199n757/" target="_blank">John S. Eastwood Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3h4nb0ks/" target="_blank">Joseph Barlow Lippincott Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/kt5w10324n/" target="_blank">Milton N. Nathanson Papers</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">National Water Resources Association </a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79250">Robert E. Glover </a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">Stephen Boyden Papers</a></li>*}
+                        {*<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">Thomas H. Means Papers</a></li>*}
+                        {*<li><a target="_blank" href="http://findingaid.lib.byu.edu/viewItem/MSS%2020">Wallace Foster Bennett Papers</a></li>*}
+                        {*<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf32900395/" target="_blank">Walter L. Huber Photograph Collection</a></li>*}
+                    {*</ul>*}
+                {*</div>*}
+				<div class="span12">
 					<h3>Finding Aids</h3>
-					<ul class="unstyled-list">
-					<li><a href="http://findingaid.lib.byu.edu/viewItem/MSS%20146" target="_blank">Arthur V. Watkins Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,0" target="_blank">C. Gregory Crampton Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,7" target="_blank">Charles Eggert Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf7q2nb3b5/" target="_blank">Charles H. Lee Papers</a></li>
-					<li><a href="http://content.wsulibs.wsu.edu/cdm-koester/wwdl_ead.html" target="_blank">Clifford Koester Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,3" target="_blank">Colorado Riverbed Case</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79245">Colorado Water Congress Collection</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79246">Delph E. Carpenter and Family </a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,4" target="_blank">Dorothy Harvey</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf958007kr/" target="_blank">Edward Hyatt Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,9" target="_blank">E. Richard Hart Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,6" target="_blank">Flaming Gorge Dam Collection</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,8" target="_blank">Floyd A. O’Neil</a></li>
-					<li><a href="http://content.wsulibs.wsu.edu/cdm-banks/wwdl_ead.html" target="_blank">Frank A Banks Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf9489p11x/" target="_blank">Frank Adams Papers</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,5" target="_blank">Glen Canyon Archaeological Survey</a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,18" target="_blank">Institute of the North American West</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79247">Ival V. Goslin Water Resources Collection </a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3v19n78q/" target="_blank">James D. Schuyler Papers</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">James L. Ogilvie </a></li>
-					<li><a href="http://content.lib.utah.edu/u?/ww-EAD,13" target="_blank">John Boyden Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf4199n757/" target="_blank">John S. Eastwood Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3h4nb0ks/" target="_blank">Joseph Barlow Lippincott Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/kt5w10324n/" target="_blank">Milton N. Nathanson Papers</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">National Water Resources Association </a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79250">Robert E. Glover </a></li>
-
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">Stephen Boyden Papers</a></li>
-					<li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">Thomas H. Means Papers</a></li>
-					<li><a target="_blank" href="http://findingaid.lib.byu.edu/viewItem/MSS%2020">Wallace Foster Bennett Papers</a></li>
-					<li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf32900395/" target="_blank">Walter L. Huber Photograph Collection</a></li>
-				
-					</ul>	
+                    <div class="span5">
+                        <ul class="unstyled-list">
+                            <li><a href="http://findingaid.lib.byu.edu/viewItem/MSS%20146" target="_blank">Arthur V. Watkins Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,0" target="_blank">C. Gregory Crampton Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,7" target="_blank">Charles Eggert Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf7q2nb3b5/" target="_blank">Charles H. Lee Papers</a></li>
+                            <li><a href="http://content.wsulibs.wsu.edu/cdm-koester/wwdl_ead.html" target="_blank">Clifford Koester Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,3" target="_blank">Colorado Riverbed Case</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79245">Colorado Water Congress Collection</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79246">Delph E. Carpenter and Family </a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,4" target="_blank">Dorothy Harvey</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf958007kr/" target="_blank">Edward Hyatt Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,9" target="_blank">E. Richard Hart Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,6" target="_blank">Flaming Gorge Dam Collection</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,8" target="_blank">Floyd A. O’Neil</a></li>
+                            <li><a href="http://content.wsulibs.wsu.edu/cdm-banks/wwdl_ead.html" target="_blank">Frank A Banks Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf9489p11x/" target="_blank">Frank Adams Papers</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,5" target="_blank">Glen Canyon Archaeological Survey</a></li>
+                        </ul>
+                    </div>
+                    <div class="span5">
+                        <ul class="unstyled-list">
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,5" target="_blank">Glen Canyon Archaeological Survey</a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,18" target="_blank">Institute of the North American West</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79247">Ival V. Goslin Water Resources Collection </a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3v19n78q/" target="_blank">James D. Schuyler Papers</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">James L. Ogilvie </a></li>
+                            <li><a href="http://content.lib.utah.edu/u?/ww-EAD,13" target="_blank">John Boyden Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf4199n757/" target="_blank">John S. Eastwood Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf3h4nb0ks/" target="_blank">Joseph Barlow Lippincott Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/kt5w10324n/" target="_blank">Milton N. Nathanson Papers</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">National Water Resources Association </a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79250">Robert E. Glover </a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79248">Stephen Boyden Papers</a></li>
+                            <li><a target="_blank" href="http://digitool.library.colostate.edu:80/R/?func=dbin-jump-full&amp;object_id=79249">Thomas H. Means Papers</a></li>
+                            <li><a target="_blank" href="http://findingaid.lib.byu.edu/viewItem/MSS%2020">Wallace Foster Bennett Papers</a></li>
+                            <li><a href="http://www.oac.cdlib.org/findaid/ark:/13030/tf32900395/" target="_blank">Walter L. Huber Photograph Collection</a></li>
+                        </ul>
+                    </div>
 				</div>
 			</div>
 		</div>
