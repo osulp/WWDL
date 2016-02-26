@@ -37,7 +37,7 @@
 </footer>
 <div class="subFooter">
 	<div class="container">	
-		<p>&copy; Western Waters Digital Library - GWLA member projects - Designed by the <a href="http://lib.utah.edu/">J. Willard Marriott Library</a></p>
+		<p>&copy; Western Waters Digital Library - GWLA member projects - Designed by the <a href="http://lib.utah.edu/">J. Willard Marriott Library</a> - Hosted by <a href="http://osulibrary.oregonstate.edu">Oregon State University Libraries and Press</a></p>
 		</div>
 	</div>	
 
