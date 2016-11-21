@@ -33,12 +33,20 @@ class RecordHandler extends Handler {
 		if (!$record) {
 			header("HTTP/1.1 410 Gone"); 	
 			include($_SERVER['DOCUMENT_ROOT'] . "/410.php");
+			exit();
+		}
+
+		if (!is_object($record)){
+			header("HTTP/1.1 410 Gone");
+			include($_SERVER['DOCUMENT_ROOT'] . "/410.php");
+			exit();
 		}
 
 		$archive =& $record->getArchive();
 		if (!$archive || !$archive->getEnabled()) {
 			header("HTTP/1.1 410 Gone"); 	
 			include($_SERVER['DOCUMENT_ROOT'] . "/410.php");
+			exit();
 		}
 
 		$this->setupTemplate($record, true);
