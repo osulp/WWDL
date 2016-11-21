@@ -17,7 +17,7 @@ echo -e "\n*** HARVEST STARTED ON $(date) ***\n" | tee -a ./logs/$log
 while read line
 do
 	if [[ $line =~ ^[^#[:blank:]] ]]; then
-		php5 harvest.php $line verbose | tee -a ./logs/$log
+		php harvest.php $line verbose | tee -a ./logs/$log
 	fi
 done < archives.txt
 

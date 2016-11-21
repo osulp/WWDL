@@ -6,3 +6,4 @@ robots.txt
 *.gz
 *.swp
 config.inc.php
+/tools/nohup*
