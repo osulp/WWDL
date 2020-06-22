@@ -12,20 +12,20 @@
 			<div class="row-fluid">
 				<div class="span12">
 					<h3>Participants</h3>
-				
+
 				<div class="tabbable">
 					<ul class="nav nav-pills nav-stacked span2">
 						<li class="active"><a href="#tabs5-pane1" data-toggle="tab">Phase 2</a></li>
 						<li><a href="#tabs5-pane2" data-toggle="tab">Phase 1</a></li>
 						<li><a href="#tabs5-pane3" data-toggle="tab">All Participants</a></li>
-						
+
 					</ul>
 					<div class="tab-content span10">
-					
+
 						<div id="tabs5-pane1" class="tab-pane fade in active">
 						<h3>Phase 2</h3>
 							<p>The Foundations of Western Water Policy project was funded by the National Endowment for the Humanities (NEH) with a grant from the Division of Preservation and Access in 2007. &quot;These grants support projects that preserve collections and create intellectual access to collections that, because of their intellectual content and value as cultural artifacts, are considered highly important for research, education, and public programming in the humanities.&quot; Four academic research libraries at Colorado State University, Brigham Young University, the University of Utah, and Washington State University will partner with the famed Water Resources Center Archives at the University of California at Berkeley to create a new digital collection for the WWDL. Together, they will provide integrated access to key archival holdings related to water policy and environmental history for the Colorado and Columbia River basins.</p>
-	<div class="row-fluid">	
+	<div class="row-fluid">
 		<div class="span4">
 				<strong>Colorado State University</strong>
 				<ul class="unstyled">
@@ -38,7 +38,7 @@
 					<li>970-491-1849</li>
 				</ul>
 		</div>
-		<div class="span4">		
+		<div class="span4">
 				<strong>University of Utah</strong>
 				<ul class="unstyled">
 					<li>Greg Thompson</li>
@@ -51,7 +51,7 @@
 					<li>801-581-8046</li>
 				</ul>
 		</div>
-		<div class="span4">		
+		<div class="span4">
 				<strong>Brigham Young University</strong>
 				<ul class="unstyled">
 					<li>Cory Nimer</li>
@@ -63,7 +63,7 @@
 					<li><a href="mailto:brad_westwood@byu.edu">cory_nimer@byu.edu<a href="cory_nimer@byu.edu"></a></li>
 					<li>801- 422-6091 </li>
 				</ul>
-			</div>	
+			</div>
 			</div>
 			<div class="row-fluid">
 			<div class="span4">
@@ -89,7 +89,7 @@
 			</div>
 			<div class="span4">
 			</div>
-			</div>	
+			</div>
 						</div>
 						<div id="tabs5-pane2" class="tab-pane fade in">
 						<h3>Phase 1</h3>
@@ -101,13 +101,13 @@
 						Box 871006<br />
 						Tempe, AZ 85287-1006</p>
 			</div>
-			<div class="span4">			
+			<div class="span4">
 						<strong>University of Arizona</strong>
 						<p>University of Arizona Library<br />
 						1510 E. University Blvd.<br />
 						Tucson, AZ 85721-0055</p>
 			</div>
-			<div class="span4">			
+			<div class="span4">
 						<strong>Colorado State University</strong>
 						<p>Colorado State University<br />
 						501 University Ave.<br />
@@ -115,18 +115,18 @@
 				</div>
 				</div>
 				<div class="row-fluid">
-				<div class="span4">		
+				<div class="span4">
 						<strong>University of Nebraska at Lincoln</strong>
 						<p>University of Nebraska-Lincoln<br />
 						Lincoln, NE 68588-4100</p>
 					</div>
-					<div class="span4">	
+					<div class="span4">
 						<strong>University of Nevada at Las Vegas </strong>
 						<p>University of Nevada-Las Vegas<br />
 						Box 457001 --LLB 237, Mail Stop 7041<br />
 						Las Vegas , NV 89154-7001</p>
 					</div>
-					<div class="span4">	
+					<div class="span4">
 						<strong>University of New Mexico</strong>
 						<p>Zimmerman Library<br />
 						1900 Roma NE, MSC05 3020<br />
@@ -134,7 +134,7 @@
 					</div>
 					</div>
 					<div class="row-fluid">
-					<div class="span4">	
+					<div class="span4">
 						<strong>Oregon State University</strong>
 						<p>Oregon State University<br />
 						121 The Valley Library<br />
@@ -145,7 +145,7 @@
 						<p>1299 University of Oregon<br />
 						Eugene, OR 97403</p>
 					</div>
-					<div class="span4">	
+					<div class="span4">
 						<strong>Brigham Young University</strong>
 						<p>Brigham Young University<br />
 						256 JRCB<br />
@@ -153,7 +153,7 @@
 					</div>
 					</div>
 					<div class="row-fluid">
-					<div class="span4">	
+					<div class="span4">
 						<strong>University of Utah</strong>
 						<p>J. W. Marriott Library<br />
 						295 S. 1500 East<br />
@@ -183,18 +183,18 @@
 				<li><a target="_blank" href="http://lib.byu.edu/digital/">Brigham Young University</a></li>
 				<li><a target="_blank" href="http://www.colostate.edu/">Colorado State University</a></li>
 				<li><a target="_blank" href="http://www.iastate.edu/">Iowa State University</a></li>
-				<li> <a target="_blank" href="http://www.orst.edu/">Oregon State University</a></li>
-				<li><a href="http://www.siu.edu/">Southern Illinois University</a><a href="http://www.tamu.edu/"></a></li>
-				<li><a href="http://www.smu.edu/">Southern Methodist University</a></li>
-				<li><a href="http://www.tamu.edu/">Texas A&amp;M University</a></li>
+				<li><a target="_blank" href="https://library.oregonstate.edu/">Oregon State University</a></li>
+				<li><a target="_blank" href="http://www.siu.edu/">Southern Illinois University</a></li>
+				<li><a target="_blank" href="http://www.smu.edu/">Southern Methodist University</a></li>
+				<li><a target="_blank" href="http://www.tamu.edu/">Texas A&amp;M University</a></li>
 				<li><a target="_blank" href="http://www.arizona.edu/">University of Arizona</a></li>
 				<li><a target="_blank" href="http://www.hawaii.edu/campuses/manoa.html">University of Hawai'i at Manoa</a></li>
-				<li><a href="http://www.uh.edu/">University of Houston</a></li>
+				<li><a target="_blank" href="http://www.uh.edu/">University of Houston</a></li>
 				<li><a target="_blank" href="http://www.unl.edu/">University of Nebraska - Lincoln</a></li>
 				<li><a target="_blank" href="http://www.library.unlv.edu/">University of Nevada - Las Vegas</a></li>
 				<li><a target="_blank" href="http://www.unm.edu/">University of New Mexico</a></li>
 				<li><a target="_blank" href="http://www.uoregon.edu/">University of Oregon</a></li>
-				<li><a href="http://www.utexas.edu/">University of Texas - Austin</a></li>
+				<li><a target="_blank" href="http://www.utexas.edu/">University of Texas - Austin</a></li>
 				<li><a target="_blank" href="http://www.utah.edu/">University of Utah</a></li>
 				<li><a target="_blank" href="http://www.washington.edu/">University of Washington</a></li>
 				<li><a target="_blank" href="http://www.usu.edu/">Utah State University</a></li>
@@ -204,15 +204,15 @@
 			<div class="span4">
 		  <p><strong>Non-GWLA Content Contributors:</strong></p>
 			<ul>
-				<li><a href="http://caltechkhr.library.caltech.edu/">California Institute of Technology </a></li>
-				<li><a href="http://libraries.claremont.edu/">Claremont Colleges</a></li>
-				<li><a href="http://humboldt-dspace.calstate.edu/xmlui/">Humboldt State University</a></li>
-				<li><a href="http://digitalcollections.northern.edu/index.php">Northern State University</a></li>
-				<li><a href="http://klamathwaterlib.oit.edu/">Oregon Institute of Technology</a></li>
-				<li><a href="http://www.lib.uidaho.edu/">University of Idaho</a></li>
-				<li> <a href="http://library.uop.edu/index.asp">University of the Pacific </a></li>
-				<li><a href="http://lib.berkeley.edu/WRCA/WRC/wrca.html">Water Resources Center Archives, University of California</a></li>
-				<li><a href="https://www.weber.edu/">Weber State University</a></li>
+				<li><a target="_blank" href="http://caltechkhr.library.caltech.edu/">California Institute of Technology </a></li>
+				<li><a target="_blank" href="https://library.claremont.edu/">Claremont Colleges</a></li>
+				<li><a target="_blank" href="http://humboldt-dspace.calstate.edu/xmlui/">Humboldt State University</a></li>
+				<li><a target="_blank" href="http://digitalcollections.northern.edu/index.php">Northern State University</a></li>
+				<li><a target="_blank" href="http://digitallib.oit.edu/digital/collection/kwl/">Oregon Institute of Technology</a></li>
+				<li><a target="_blank" href="http://www.lib.uidaho.edu/">University of Idaho</a></li>
+				<li><a target="_blank" href="http://library.uop.edu/index.asp">University of the Pacific </a></li>
+				<li><a target="_blank" href="https://library.ucr.edu/collections/water-resources-collections-archives">Water Resources Center Archives, University of California</a></li>
+				<li><a target="_blank" href="https://www.weber.edu/">Weber State University</a></li>
 			</ul>
 			</div>
 			<div class="span4">
@@ -221,33 +221,33 @@
 				<li><a href="http://www.baylor.edu/">Baylor University</a></li>
 				<li><a href="http://www.ksu.edu/">Kansas State University</a></li>
 				<li><a href="http://www.lindahall.org/">Linda Hall Library</a></li>
-				<li><a href="http://riceinfo.rice.edu/">Rice University</a></li>
+				<li><a href="http://library.rice.edu/">Rice University</a></li>
 				<li><a href="http://www.ttu.edu/">Texas Tech University</a></li>
 				<li><a href="http://www.uark.edu/">University of Arkansas</a></li>
 				<li><a href="http://www.colorado.edu/">University of Colorado at Boulder</a></li>
 				<li><a href="http://www.uh.edu/">University of Houston</a></li>
 				<li><a href="http://www.ku.edu/">University of Kansas</a></li>
 				<li><a href="http://www.ou.edu/">University of Oklahoma</a></li>
-				<li><a href="http://osu.okstate.edu/">Oklahoma State University </a></li>
-				<li><a href="http://www.usc.edu/">University of Southern California</a><a href="http://www.utexas.edu/"></a></li>
+				<li><a href="http://osu.okstate.edu/">Oklahoma State University</a></li>
+				<li><a href="http://www.usc.edu/">University of Southern California</a></li>
 				<li><a href="http://www.wustl.edu/">Washington University in St. Louis</a></li>
 				<li><a href="http://www.missouri.edu/">University of Missouri</a></li>
 			</ul>
 			</div>
 			</div>
 						</div>
-						
-					</div>
-					<!-- /.tab-content --> 
-				</div>
-				
-				
-				
-				
-			
-				
 
-	
+					</div>
+					<!-- /.tab-content -->
+				</div>
+
+
+
+
+
+
+
+
 </div>
 </div>
 </div>

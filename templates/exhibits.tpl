@@ -7,13 +7,13 @@
 
 </div>
 
-	
+
 	<div class="grey">
 	<div class="container">
 		<div class="featured-items">
 		<h3>Exhibits</h3>
 			<div class="row-fluid">
-			
+
 				<div class="f-item span4">
 				<a href="/exhibits?p=EdwardCFritz"><img src="img/edExhibitThumb.jpg" alt="Edward C. Fritz Papers Thumbnail"></a>
 				<p class="f-title">Edward C. Fritz Papers, 1950s - 2008</p>
@@ -29,13 +29,13 @@
 				<p class="f-title">Explore Western Waters Digital Library Through Geospatial Maps</p>
 				<p class="f-descript">The following geospatial maps have been created to geographically locate materials for the Western Waters Digital Library including institutional partners (indicated in red) as well as selected places of interest (indicated in green).</p>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
 </div>
-	
-	
+
+
 
 
 {include file="common/footer.tpl"}
