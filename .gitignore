@@ -7,3 +7,4 @@ robots.txt
 *.swp
 config.inc.php
 /tools/nohup*
+.DS_Store
