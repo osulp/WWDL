@@ -1,23 +1,44 @@
 # Dockerfile for wwdl
-FROM php:5.6-fpm-alpine
+#FROM php:5.6-fpm-alpine
+FROM alpine:3.8
 
 # Install base packages
 RUN apk --no-cache update && \
   apk add --no-cache bash \
     bash-completion \
     curl \
-    vim
+    php5 \
+    php5-bcmath \
+    php5-cli \
+    php5-common \
+    php5-dba \
+    php5-dev \
+    php5-fpm \
+    php5-gd \
+    php5-mysql \
+    php5-mysqli \
+    php5-odbc \
+    php5-opcache \
+    php5-pdo \
+    php5-pear \
+    php5-snmp \
+    php5-soap \
+    php5-xml \
+    php5-xmlrpc \
+    vim && \
+  mkdir -p /var/www/html
 
-# Remove junk from nginx install
-# Create /app directory tree
-RUN rm -rf /etc/nginx/http.d && mkdir -p /app
 
 # Copy in the source code to /app
-COPY . /app/
-COPY ./conf/php-fpm.conf /usr/local/etc/php-fpm.conf
-COPY ./conf/www.conf /usr/local/etc/php-fpm.d/www.conf
+COPY . /var/www/html/
 
-RUN rm -rf /app/.git /app/Dockerfile /app/build.sh /app/conf
+# Copy configuration customizations
+COPY ./conf/php-fpm.conf /etc/php5/php-fpm.conf
+COPY ./conf/php.ini /etc/php5/php.ini
+
+# Remove junk
+RUN rm -rf /var/www/html/.git /var/www/html/Dockerfile /var/www/html/build.sh \
+  /var/www/html/conf
 
 # Expose our TCP port
 EXPOSE 9000/tcp
