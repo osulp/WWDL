@@ -7,6 +7,7 @@ RUN apk --no-cache update && \
   apk add --no-cache bash \
     bash-completion \
     curl \
+    memcached \
     nginx \
     php5 \
     php5-bcmath \
@@ -28,7 +29,7 @@ RUN apk --no-cache update && \
     php5-xmlrpc \
     supervisor \
     vim && \
-  mkdir -p /var/www/html && rm -rf /etc/nginx/conf.d
+  mkdir -p /var/www/html /run/nginx /run/php-fpm && rm -rf /etc/nginx/conf.d
 
 
 # Copy in the source code to /app
@@ -41,6 +42,7 @@ COPY ./conf/supervisord.conf /etc/supervisord.conf
 COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 COPY ./conf/nginx.ini /etc/supervisor.d/nginx.ini
 COPY ./conf/php-fpm.ini /etc/supervisor.d/php-fpm.ini
+COPY ./conf/memcached.ini /etc/supervisor.d/memcached.ini
 
 # Remove junk
 RUN rm -rf /var/www/html/.git /var/www/html/Dockerfile /var/www/html/build.sh \
