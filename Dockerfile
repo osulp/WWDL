@@ -7,6 +7,7 @@ RUN apk --no-cache update && \
   apk add --no-cache bash \
     bash-completion \
     curl \
+    nginx \
     php5 \
     php5-bcmath \
     php5-cli \
@@ -25,8 +26,9 @@ RUN apk --no-cache update && \
     php5-soap \
     php5-xml \
     php5-xmlrpc \
+    supervisor \
     vim && \
-  mkdir -p /var/www/html
+  mkdir -p /var/www/html && rm -rf /etc/nginx/conf.d
 
 
 # Copy in the source code to /app
@@ -35,13 +37,19 @@ COPY . /var/www/html/
 # Copy configuration customizations
 COPY ./conf/php-fpm.conf /etc/php5/php-fpm.conf
 COPY ./conf/php.ini /etc/php5/php.ini
+COPY ./conf/supervisord.conf /etc/supervisord.conf
+COPY ./conf/nginx.conf /etc/nginx/nginx.conf
+COPY ./conf/nginx.ini /etc/supervisor.d/nginx.ini
+COPY ./conf/php-fpm.ini /etc/supervisor.d/php-fpm.ini
 
 # Remove junk
 RUN rm -rf /var/www/html/.git /var/www/html/Dockerfile /var/www/html/build.sh \
   /var/www/html/conf
 
 # Expose our TCP port
-EXPOSE 9000/tcp
+EXPOSE 80/tcp
 
-# Run php-fpm
-CMD ["php-fpm", "-F"]
+STOPSIGNAL SIGTERM
+
+# Run supervisord
+CMD ["supervisord", "-n"]
