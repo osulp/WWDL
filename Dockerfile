@@ -13,6 +13,7 @@ RUN apk --no-cache update && \
     php5-bcmath \
     php5-cli \
     php5-common \
+    php5-ctype \
     php5-dba \
     php5-dev \
     php5-fpm \
