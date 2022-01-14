@@ -46,7 +46,7 @@ COPY ./conf/memcached.ini /etc/supervisor.d/memcached.ini
 
 # Remove junk
 RUN rm -rf /var/www/html/.git /var/www/html/Dockerfile /var/www/html/build.sh \
-  /var/www/html/conf
+  /var/www/html/conf /var/www/html/.version
 
 # Expose our TCP port
 EXPOSE 80/tcp
