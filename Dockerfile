@@ -1,5 +1,4 @@
 # Dockerfile for wwdl
-#FROM php:5.6-fpm-alpine
 FROM alpine:3.8
 
 # Install base packages
@@ -33,7 +32,6 @@ RUN apk --no-cache update && \
   mkdir -p /var/www/html/cache /run/nginx /run/php-fpm && \
   rm -rf /etc/nginx/conf.d
 
-
 # Copy in the source code to /app
 COPY . /var/www/html/
 
@@ -48,7 +46,7 @@ COPY ./conf/memcached.ini /etc/supervisor.d/memcached.ini
 
 # Remove junk
 RUN rm -rf /var/www/html/.git /var/www/html/Dockerfile /var/www/html/build.sh \
-  /var/www/html/conf /var/www/html/.version
+  /var/www/html/conf /var/www/html/.version /var/www/localhost
 
 # Expose our TCP port
 EXPOSE 80/tcp
