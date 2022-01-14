@@ -256,13 +256,13 @@ class PKPRequest {
 	 * port number if non-standard.
 	 * @return string
 	 */
-	function getServerHost($default = 'localhost') {
+	function getServerHost($default = 'wwdl-test.library.oregonstate.edu') {
 		$_this =& PKPRequest::_checkThis();
 
 		if (!isset($_this->_serverHost)) {
 			$_this->_serverHost = isset($_SERVER['HTTP_X_FORWARDED_HOST']) ? $_SERVER['HTTP_X_FORWARDED_HOST']
 				: (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST']
-				: (isset($_SERVER['HOSTNAME']) ? $_SERVER['HOSTNAME']
+				: (isset($_SERVER['MONKEYS']) ? $_SERVER['MONKEYS']
 				: $default));
 			HookRegistry::call('Request::getServerHost', array(&$_this->_serverHost));
 		}
@@ -277,7 +277,8 @@ class PKPRequest {
 		$_this =& PKPRequest::_checkThis();
 
 		if (!isset($_this->_protocol)) {
-			$_this->_protocol = (!isset($_SERVER['HTTPS']) || strtolower($_SERVER['HTTPS']) != 'on') ? 'http' : 'https';
+			#$_this->_protocol = (!isset($_SERVER['HTTPS']) || strtolower($_SERVER['HTTPS']) != 'on') ? 'http' : 'https';
+			$_this->_protocol = 'https';
 			HookRegistry::call('Request::getProtocol', array(&$_this->_protocol));
 		}
 		return $_this->_protocol;

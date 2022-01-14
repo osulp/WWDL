@@ -32,8 +32,8 @@
 	<link rel="stylesheet" href="{$baseUrl}/styles/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/prettyPhoto.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/main.css" type="text/css" />
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$baseUrl}/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 
 	
